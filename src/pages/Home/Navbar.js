@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar-background-img h-screen">
       {/* -------------navbar------------------- */}
-      <nav className="w-full flex items-center justify-between px-4 md:px-16 py-6">
+      <nav className="w-full flex items-center justify-between">
         <div>
           <h1 className="font-bold tracking-wide text-xl text-accent hover:scale-x-105 transition-all">
             <Link
@@ -38,9 +38,6 @@ const Navbar = () => {
           </h1>
         </div>
       </nav>
-
-      {/* ------------------particles----------------------- */}
-      <ParticlesContainer></ParticlesContainer>
 
       {/* ---------banner------- */}
       <div className="flex justify-center items-center h-4/5">
@@ -78,6 +75,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* ------------------particles----------------------- */}
+      <ParticlesContainer></ParticlesContainer>
     </div>
   );
 };
