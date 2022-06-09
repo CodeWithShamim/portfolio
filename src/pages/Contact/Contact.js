@@ -14,6 +14,12 @@ const Contact = () => {
         method="POST"
         className="w-full flex flex-col"
       >
+        <input
+          type="hidden"
+          name="_next"
+          value="https://codewithshamim.web.com/thanks.html"
+        ></input>
+
         <div>
           <input
             type="text"
