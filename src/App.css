@@ -1,3 +1,7 @@
 .App {
     text-align: center;
 }
+
+#tsparticles {
+    height: 400px;
+}
