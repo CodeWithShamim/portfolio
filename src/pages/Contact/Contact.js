@@ -7,21 +7,27 @@ const Contact = () => {
       <h1 className="mb-6 text-3xl">
         <span className="text-pink-500">Contact</span> with me...
       </h1>
-      <form className="w-full flex flex-col">
+
+      {/* ----contact form---- */}
+      <form
+        action="https://formsubmit.co/0bf67c005d234851024f28a0b87d9bbf"
+        method="POST"
+        className="w-full flex flex-col"
+      >
         <div>
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Full Name"
-            className="outline-0 border border-gray-400 p-2 w-3/6 bg-transparent focus:placeholder-white"
+            className="outline-0 border border-gray-400 border-r-0 p-2 w-3/6 bg-transparent focus:placeholder-white rounded rounded-r-none rounded-b-none"
           />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
-            className="outline-0 border border-gray-400 p-2 w-3/6 bg-transparent focus:placeholder-white"
+            className="outline-0 border border-gray-400 p-2 w-3/6 bg-transparent focus:placeholder-white rounded rounded-l-none rounded-b-none"
           />
         </div>
         <textarea
