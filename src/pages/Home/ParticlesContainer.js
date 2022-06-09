@@ -47,14 +47,14 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#60A5FA",
           },
           links: {
             color: "#ffffff",
-            distance: 50,
+            distance: 30,
             enable: true,
             opacity: 0.5,
-            width: 1,
+            width: 0.1,
           },
           collisions: {
             enable: true,
@@ -66,7 +66,7 @@ const ParticlesContainer = () => {
               default: "bounce",
             },
             random: false,
-            speed: 4,
+            speed: 2,
             straight: false,
           },
           number: {

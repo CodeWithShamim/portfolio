@@ -4,15 +4,20 @@ import ParticlesContainer from "./ParticlesContainer";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="navbar-background-img h-screen">
       <nav className="w-full flex items-center justify-between px-16 py-6 z-50">
         <div>
-          <h1 className="font-bold tracking-wide text-xl text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent hover:from-pink-400 hover:scale-105 transition-all">
-            <Link to="/">SHAMIM ISLAM</Link>
+          <h1 className="font-bold tracking-wide text-xl text-accent hover:scale-x-105 transition-all">
+            <Link
+              to="/"
+              className="border p-1 hover:text-blue-400 transition-all"
+            >
+              SHAMIM ISLAM
+            </Link>
           </h1>
         </div>
 
-        <div className="grid grid-flow-col gap-3 uppercase text-sm font-bold tracking-widest">
+        <div className="grid grid-flow-col gap-3 uppercase text-md font-bold tracking-widest">
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
             <Link to="/">About</Link>
           </h1>
@@ -31,6 +36,12 @@ const Navbar = () => {
         </div>
       </nav>
       <ParticlesContainer></ParticlesContainer>
+      {/* ---------banner-------
+      <div>
+        <div>
+          <img src={img} alt="banner-img" />
+        </div>
+      </div> */}
     </div>
   );
 };
