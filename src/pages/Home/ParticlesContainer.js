@@ -80,10 +80,10 @@ const ParticlesContainer = () => {
             value: 0.5,
           },
           shape: {
-            type: "circle",
+            type: "polygon",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 3 },
           },
         },
         detectRetina: true,
