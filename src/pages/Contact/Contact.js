@@ -17,7 +17,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="_next"
-          value="https://codewithshamim.web.com/thanks.html"
+          value="https://codewithshamim.web.app"
         ></input>
 
         <div>
