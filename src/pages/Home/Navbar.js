@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ParticlesContainer from "./ParticlesContainer";
 import Typewriter from "typewriter-effect";
+import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
 
 const Navbar = () => {
   return (
@@ -47,7 +48,9 @@ const Navbar = () => {
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold uppercase tracking-widest">
             I'm SHAMIM
           </h1>
-          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-accent">
+
+          {/* ---typewriter--- */}
+          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-accent font-semibold">
             <Typewriter
               options={{
                 strings: [
@@ -57,11 +60,22 @@ const Navbar = () => {
                 ],
                 autoStart: true,
                 loop: true,
-                delay: 100,
+                delay: 50,
                 deleteSpeed: 5,
               }}
             />
           </p>
+
+          {/* ---download resume--- */}
+          <div className="py-4 md:py-10 text-base-100">
+            <a
+              className="btn md:btn-error btn-sm bg-red-400 text-white md:btn-md md:text-white font-bold hover:btn-accent transition-all hover:text-white hover:scale-x-110"
+              href={Resume}
+              download="Resume of shamim islam"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>
