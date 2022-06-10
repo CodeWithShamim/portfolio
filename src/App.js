@@ -21,7 +21,7 @@ function App() {
           <p className="text-secondary animate-bounce ease-linear text-2xl font-bold">
             SHAMIM ISLAM
           </p>
-          <BarLoader color="#ffffff" loading={loading} height={5} width={180} />
+          <BarLoader color="#ffffff" loading={loading} height={4} width={180} />
           <DotLoader color="white" loading={loading} height={10} width={180} />
         </div>
         <ParticlesContainer />
@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <div className="App text-secondary font-serif">
+    <div className="App text-secondary">
       <Home />
     </div>
   );
