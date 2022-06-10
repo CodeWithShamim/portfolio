@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="w-4/5 mx-auto lg:mx-0 lg:w-3/6  mt-10 md:mt-20">
+    <div className="w-4/5 mx-auto px-4 md:px-10 lg:mx-0 lg:w-3/6  mt-10 md:mt-20">
       <h1 className="mb-6 text-3xl">
         <span className="text-pink-500">Contact</span> with me...
       </h1>

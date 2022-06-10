@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar-background-img h-screen">
       {/* -------------navbar------------------- */}
-      <nav className="w-full flex items-center justify-between">
+      <nav className="w-full px-4 md:px-10 py-10 flex items-center justify-between">
         <div>
           <h1 className="font-bold tracking-wide text-xl text-accent hover:scale-x-105 transition-all">
             <Link
