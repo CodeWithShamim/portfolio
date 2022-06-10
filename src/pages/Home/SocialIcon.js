@@ -16,7 +16,7 @@ const SocialIcon = () => {
         rel="noreferrer"
         target="_blank"
       >
-        <FaLinkedin className="text-accent hover:text-secondary hover:scale-125" />
+        <FaLinkedin className="text-accent hover:text-secondary hover:scale-125 animate-pulse" />
       </a>
 
       {/* ----github---- */}
