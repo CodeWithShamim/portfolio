@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="px-4 md:px-10 py-16 flex items-center justify-center bg-red-900"
+      className="px-4 md:px-10 py-16 flex flex-col md:flex-row items-center justify-center bg-red-900"
       // style={{
       //   background: `url(${bg})`,
       //   backgroundSize: "cover",
@@ -14,7 +14,7 @@ const About = () => {
       // }}
     >
       {/* ----------left side----------- */}
-      <div className="pr-10 text-left">
+      <div className="pr-10 text-left mb-6 md:mb-0">
         <h1>
           <p className="text-4xl text-indigo-500 font-bold"> Who Am I ?</p>
           <p className="text-xl">
