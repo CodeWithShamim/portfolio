@@ -9,14 +9,15 @@ import {
 
 const SocialIcon = () => {
   return (
-    <div className="absolute left-3 top-1/4 md:top-1/2 flex flex-col gap-3 text-xl md:text-2xl shadow-xl transition-all">
+    <div className="absolute rounded-lg left-3 top-1/4 md:top-1/2 flex flex-col gap-3 text-sm md:text-xl lg:2xl shadow-xl transition-all">
       {/* ----linkedin---- */}
       <a
         href="https://www.linkedin.com/in/codewithshamim"
         rel="noreferrer"
         target="_blank"
+        className="bg-teal-500 p-2 rounded-full"
       >
-        <FaLinkedin className="text-accent hover:text-secondary hover:scale-125 animate-pulse" />
+        <FaLinkedin className="text-secondary hover:scale-125 hover:text-accent" />
       </a>
 
       {/* ----github---- */}
@@ -24,8 +25,9 @@ const SocialIcon = () => {
         href="https://github.com/CodeWithShamim"
         rel="noreferrer"
         target="_blank"
+        className="bg-teal-500 p-2 rounded-full"
       >
-        <FaGithub className="text-accent hover:text-secondary hover:scale-125" />
+        <FaGithub className="text-secondary hover:scale-125 hover:text-accent" />
       </a>
 
       {/* -----facebook---- */}
@@ -33,8 +35,9 @@ const SocialIcon = () => {
         href="https://www.facebook.com/codewithshamim"
         rel="noreferrer"
         target="_blank"
+        className="bg-teal-500 p-2 rounded-full"
       >
-        <FaFacebook className="text-accent hover:text-secondary hover:scale-125" />
+        <FaFacebook className="text-secondary hover:scale-125 hover:text-accent" />
       </a>
 
       {/* -----instagram---- */}
@@ -42,8 +45,9 @@ const SocialIcon = () => {
         href="https://www.instagram.com/codewithshamim"
         rel="noreferrer"
         target="_blank"
+        className="bg-teal-500 p-2 rounded-full"
       >
-        <FaInstagram className="text-accent hover:text-secondary hover:scale-125" />
+        <FaInstagram className="text-secondary hover:scale-125 hover:text-accent" />
       </a>
 
       {/* -----twitter---- */}
@@ -51,8 +55,9 @@ const SocialIcon = () => {
         href="https://twitter.com/CodeWithShamim"
         rel="noreferrer"
         target="_blank"
+        className="bg-teal-500 p-2 rounded-full"
       >
-        <FaTwitter className="text-accent hover:text-secondary hover:scale-125" />
+        <FaTwitter className="text-secondary hover:scale-125 hover:text-accent" />
       </a>
     </div>
   );
