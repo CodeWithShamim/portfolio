@@ -1,33 +1,40 @@
 import React from "react";
 import bg from "../../images/pattern.png";
-import img from "../../images/pattern.png";
+import img from "../../images/my-pic.jpg";
 
 const About = () => {
   return (
     <div
-      className="bg-accent"
-      style={{
-        background: `url(${bg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      id="about"
+      className="px-4 md:px-10 py-16 flex items-center justify-center bg-red-900"
+      // style={{
+      //   background: `url(${bg})`,
+      //   backgroundSize: "cover",
+      //   backgroundPosition: "center",
+      // }}
     >
       {/* ----------left side----------- */}
-      <div>
-        <img src={img} alt="about-img" />
+      <div className="pr-10 text-left">
+        <h1>
+          <p className="text-4xl text-indigo-500 font-bold"> Who Am I ?</p>
+          <p className="text-xl">
+            I'm Shamim Islam, A Visual{" "}
+            <span className="text-indigo-500 font-semibold">Web Designer</span>{" "}
+            And{" "}
+            <span className="text-indigo-500 font-semibold">Web Developer</span>
+          </p>
+        </h1>
+        <p className="pt-6">
+          I am a web designer for years, which comply with the latest design
+          trends. I help convert a vision and an idea into meaningful and useful
+          products. Having a sharp eye for product evolution helps me prioritize
+          tasks, iterate fast and deliver faster.
+        </p>
       </div>
+
       {/* --------right side---------- */}
       <div>
-        <h1>
-          Who Am I ? I'm Ruby Smith, A Visual UX/UI Designer And Web Developer
-        </h1>
-        <p>
-          I am a freelancer based in the United Kingdom and i have been building
-          noteworthy UX/UI designs and websites for years, which comply with the
-          latest design trends. I help convert a vision and an idea into
-          meaningful and useful products. Having a sharp eye for product
-          evolution helps me prioritize tasks, iterate fast and deliver faster.
-        </p>
+        <img className="rounded-full" src={img} alt="about-img" />
       </div>
     </div>
   );

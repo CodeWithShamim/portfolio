@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <div className="App text-secondary">
+    <div className="App text-secondary font-serif">
       <Home />
     </div>
   );
