@@ -17,10 +17,10 @@ const Projects = () => {
             alt="project1"
             className="w-full rounded-2xl hover:scale-105 transition-all"
           />
-
           <h1 className="my-4 text-lg font-semibold text-primary">
             Ryan refrigerator instrument (Full Stack)
           </h1>
+
           {/* technologies used */}
           <div className="overflow-scroll px-4">
             <span className="bg-accent rounded-full px-2">React</span>
@@ -38,7 +38,38 @@ const Projects = () => {
             <span className="bg-accent rounded-full px-2">React hook form</span>
             <span className="bg-accent rounded-full px-2">Firebase</span>
           </div>
+          {/* code link*/}
+          <div className="font-bold grid grid-flow-col bg-primary">
+            <p>
+              <a
+                href="https://ryan-refrigerator-instrument.web.app"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Live
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://github.com/CodeWithShamim/manufacturer-website-client-side"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Client Code
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://github.com/CodeWithShamim/manufacturer-website-server-side"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Server Code
+              </a>
+            </p>
+          </div>
         </div>
+
         {/* ---2--- */}
         <div>
           <img
