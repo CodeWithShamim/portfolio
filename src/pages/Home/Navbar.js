@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link to="/">Contact</Link>
           </h1>
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
-            <Link to="/">Testimonials</Link>
+            <Link to="/">Blogs</Link>
           </h1>
         </div>
       </nav>
