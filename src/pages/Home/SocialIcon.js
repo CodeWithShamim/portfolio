@@ -9,7 +9,7 @@ import {
 
 const SocialIcon = () => {
   return (
-    <div className="absolute rounded-lg left-3 top-1/4 md:top-1/2 flex flex-col gap-3 text-sm md:text-xl lg:2xl shadow-xl transition-all">
+    <div className="absolute rounded-lg left-3 top-1/4 md:top-1/2 flex flex-col gap-3 text-sm md:text-lg lg:xl shadow-xl transition-all">
       {/* ----linkedin---- */}
       <a
         href="https://www.linkedin.com/in/codewithshamim"
