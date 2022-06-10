@@ -19,11 +19,15 @@ const About = () => {
       {/* --------right side---------- */}
       <div>
         <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          corrupti assumenda quas tempore exercitationem, corporis quos
-          consequuntur ab voluptate quae consequatur suscipit pariatur alias
-          molestias, iusto similique? Quisquam, impedit ipsum?
+          Who Am I ? I'm Ruby Smith, A Visual UX/UI Designer And Web Developer
         </h1>
+        <p>
+          I am a freelancer based in the United Kingdom and i have been building
+          noteworthy UX/UI designs and websites for years, which comply with the
+          latest design trends. I help convert a vision and an idea into
+          meaningful and useful products. Having a sharp eye for product
+          evolution helps me prioritize tasks, iterate fast and deliver faster.
+        </p>
       </div>
     </div>
   );
