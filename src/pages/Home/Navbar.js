@@ -22,7 +22,7 @@ const Navbar = () => {
 
         <div className="uppercase text-md font-bold tracking-widest hidden lg:flex gap-6">
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
-            <Link to="/">About</Link>
+            <a href="#about">About</a>
           </h1>
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
             <a href="#projects">Projects</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <a href="#contacts">Contact</a>
           </h1>
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
-            <Link to="/">Blogs</Link>
+            <a href="#blogs">Blogs</a>
           </h1>
         </div>
       </nav>
