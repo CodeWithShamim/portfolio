@@ -9,7 +9,7 @@ import {
 
 const SocialIcon = () => {
   return (
-    <div className="fixed bg-black md:bg-inherit justify-center w-full bottom-0 left-0 right-0 p-2 z-50 md:absolute md:left-3 md:top-1/4 flex md:flex-col gap-3 text-2xl shadow-xl transition-all">
+    <div className="absolute left-3 top-1/4 md:top-1/2 flex flex-col gap-3 text-xl md:text-2xl shadow-xl transition-all">
       {/* ----linkedin---- */}
       <a
         href="https://www.linkedin.com/in/codewithshamim"

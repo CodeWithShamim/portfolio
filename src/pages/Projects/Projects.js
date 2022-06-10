@@ -5,7 +5,7 @@ import project3 from "../../images/projects/3.png";
 
 const Projects = () => {
   return (
-    <div className="px-4 md:px-10 py-12">
+    <div id="projects" className="px-4 md:px-10 py-12">
       <h1 className="text-5xl">Recent Projects</h1>
 
       {/* -----projects----- */}
