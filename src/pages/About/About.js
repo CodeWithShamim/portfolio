@@ -10,12 +10,12 @@ const About = () => {
       {/* ----------left side----------- */}
       <div className="pr-10 text-left mb-6 md:mb-0">
         <h1>
-          <p className="text-4xl text-indigo-400 font-bold"> Who Am I ?</p>
+          <p className="text-4xl text-teal-500 font-bold"> Who Am I ?</p>
           <p className="text-xl">
             I'm Shamim Islam, A Visual{" "}
-            <span className="text-indigo-400 font-semibold">Web Designer</span>{" "}
+            <span className="text-teal-500 font-semibold">Web Designer</span>{" "}
             And{" "}
-            <span className="text-indigo-400 font-semibold">Web Developer</span>
+            <span className="text-teal-500 font-semibold">Web Developer</span>
           </p>
         </h1>
         <p className="pt-6 font-medium">
@@ -28,7 +28,11 @@ const About = () => {
 
       {/* --------right side---------- */}
       <div>
-        <img className="rounded-full" src={img} alt="about-img" />
+        <img
+          className="rounded-full blur-sm hover:blur-0"
+          src={img}
+          alt="about-img"
+        />
       </div>
     </div>
   );
