@@ -1,45 +1,22 @@
-import { useEffect, useState } from "react";
 import "./App.css";
-import AnimatedCursor from "react-animated-cursor";
+import React, { useEffect, useState } from "react";
 import Home from "./pages/Home/Home";
-import BarLoader from "react-spinners/BarLoader";
-import DotLoader from "react-spinners/DotLoader";
-import ParticlesContainer from "./pages/Home/ParticlesContainer";
+import PreLoader from "./PreLoader";
 
 function App() {
+  // ---pre loader---
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
-
-  // ----pre loader----
   if (loading) {
-    return (
-      <>
-        <div className="flex flex-col items-center justify-center w-full h-screen">
-          <p className="text-secondary animate-bounce ease-linear text-2xl font-bold">
-            SHAMIM ISLAM
-          </p>
-          <BarLoader color="#ffffff" loading={loading} height={4} width={180} />
-          <DotLoader color="white" loading={loading} height={10} width={180} />
-        </div>
-        <ParticlesContainer />
-      </>
-    );
+    return <PreLoader loading={loading} />;
   }
 
   return (
     <div className="App text-secondary font-serif">
-      <AnimatedCursor
-        color="224, 71, 0"
-        innerSize={10}
-        outerSize={50}
-        outerAlpha={0.3}
-        innerScale={0.7}
-        outerScale={1.8}
-      />
       <Home />
     </div>
   );

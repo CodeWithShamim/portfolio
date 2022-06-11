@@ -3,11 +3,6 @@
 @tailwind utilities;
 body {
     margin: 0;
-    @font-face {
-        font-family: "calibre";
-        src: local("calibre"), url("../src/calibre/CalibreBold.otf") format("truetype");
-        font-weight: bold;
-    }
 }
 
 code {

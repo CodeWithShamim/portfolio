@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import { useState } from "react";
 
 const ScrollButton = () => {
@@ -24,11 +24,11 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <div
-      className="bg-pink-700 rounded-full p-1 fixed right-10 bottom-24 animate-bounce"
+      className="bg-accent rounded-full py-6 fixed right-10 bottom-24 animate-bounce"
       style={{ display: visible ? "inline" : "none" }}
       onClick={scrollToTop}
     >
-      <FaArrowCircleUp className="text-xl" />
+      <FaRegArrowAltCircleUp className="text-xl" />
     </div>
   );
 };
