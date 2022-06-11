@@ -5,13 +5,13 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about-bg-img px-4 md:px-10 py-16 flex flex-col md:flex-row items-center justify-center"
+      className="about-bg-img flex flex-col md:flex-row items-center justify-center"
     >
       {/* ----------left side----------- */}
-      <div className="pr-10 text-left mb-6 md:mb-0">
+      <div className="text-left px-6 my-6 md:mb-0 flex-1">
         <h1>
-          <p className="text-4xl text-teal-500 font-bold"> Who Am I ?</p>
-          <p className="text-xl">
+          <p className="text-5xl text-teal-500 font-bold"> Who Am I ?</p>
+          <p className="text-2xl">
             I'm Shamim Islam, A Visual{" "}
             <span className="text-teal-500 font-semibold">Web Designer</span>{" "}
             And{" "}
@@ -27,9 +27,9 @@ const About = () => {
       </div>
 
       {/* --------right side---------- */}
-      <div>
+      <div className="flex-1">
         <img
-          className="rounded-full blur-sm hover:blur-0"
+          className="rounded-tl-full rounded-br-3xl blur-sm hover:blur-0"
           src={img}
           alt="about-img"
         />
