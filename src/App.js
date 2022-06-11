@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import AnimatedCursor from "react-animated-cursor";
 import Home from "./pages/Home/Home";
 import BarLoader from "react-spinners/BarLoader";
 import DotLoader from "react-spinners/DotLoader";
@@ -31,6 +32,14 @@ function App() {
 
   return (
     <div className="App text-secondary font-serif">
+      <AnimatedCursor
+        color="224, 71, 0"
+        innerSize={10}
+        outerSize={50}
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.8}
+      />
       <Home />
     </div>
   );
