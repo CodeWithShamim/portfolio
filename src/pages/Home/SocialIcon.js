@@ -17,7 +17,7 @@ const SocialIcon = () => {
         target="_blank"
         className="bg-teal-500 p-2 rounded-full"
       >
-        <FaLinkedin className="text-secondary hover:scale-125 hover:text-accent animate-bounce" />
+        <FaLinkedin className="text-secondary hover:scale-125 hover:text-accent animate-spin" />
       </a>
 
       {/* ----github---- */}
