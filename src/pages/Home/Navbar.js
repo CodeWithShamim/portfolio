@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ParticlesContainer from "./ParticlesContainer";
 import Typewriter from "typewriter-effect";
 import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
+import logo from "../../images/logo.png";
 
 const Navbar = () => {
   return (
@@ -10,12 +11,9 @@ const Navbar = () => {
       {/* -------------navbar------------------- */}
       <nav className="w-full px-4 md:px-10 py-10 flex items-center justify-between">
         <div>
-          <h1 className="font-bold tracking-wide text-xl text-accent hover:scale-x-105 transition-all">
-            <Link
-              to="/"
-              className="border p-1 hover:text-blue-400 transition-all"
-            >
-              SHAMIM ISLAM
+          <h1 className="">
+            <Link to="/">
+              <img src={logo} alt="logo" className="w-16 lg:w-20" />
             </Link>
           </h1>
         </div>
@@ -47,7 +45,7 @@ const Navbar = () => {
           </h1>
 
           {/* ---typewriter--- */}
-          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-accent font-semibold">
+          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-teal-300 font-semibold">
             <Typewriter
               options={{
                 strings: [
@@ -66,7 +64,7 @@ const Navbar = () => {
           {/* ---download resume--- */}
           <div className="py-4 md:py-10 text-base-100">
             <a
-              className="btn md:btn-error btn-sm bg-red-400 text-white md:btn-md md:text-white font-bold hover:btn-accent transition-all hover:text-white hover:scale-x-110"
+              className="btn btn-outline font-bold text-secondary rounded-tl-full rounded-br-full"
               href={Resume}
               download="Resume of shamim islam"
             >
