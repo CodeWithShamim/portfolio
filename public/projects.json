@@ -1,0 +1,43 @@
+[{
+        "id": 1,
+        "name": "Ryan refrigerator instrument",
+        "img": "https://i.ibb.co/Fnv51sv/1.png",
+        "technologies": ["React", "TailwindCSS", "Daisy UI", "Stripe", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
+        "description": [
+            "Full-stack Single page application refrigerator tool buying website. Add JWT for Secure data.",
+            "Create a dashboard for User and Admin. Implement sign-in, and sign-out methods using Firebase.",
+            "Seamless animations and responsiveness for all devices and Payment system add using stripe."
+        ],
+        "live": "https://ryan-refrigerator-instrument.web.app/",
+        "clientCode": "https://github.com/CodeWithShamim/manufacturer-website-client-side",
+        "serverCode": "https://github.com/CodeWithShamim/manufacturer-website-server-side"
+    },
+    {
+        "id": 2,
+        "name": "Ryan books store",
+        "img": "https://i.ibb.co/Xp9nQ9z/2.png",
+        "technologies": ["React", "Bootstrap", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
+        "description": [
+            "It’s a SPA book-buying website. Users can order any book, update & manage all inventory.",
+            "Manage all orders and add any item or update. Implement firebase authentication & authorization.",
+            "Seamless animations and responsiveness for all devices."
+        ],
+        "live": "https://ryan-books-store.web.app/",
+        "clientCode": "https://github.com/CodeWithShamim/Ryan-books-store-client-side",
+        "serverCode": "https://github.com/CodeWithShamim/Ryan-books-store-server-side"
+    },
+    {
+        "id": 3,
+        "name": "Eyun fitness",
+        "img": "https://i.ibb.co/ZLxCvfN/3.png",
+        "technologies": ["React", "Bootstrap", "Firebase"],
+        "description": [
+            "Create a unique design and added an awesome gym service section.",
+            "Implement firebase authentication & authorization and fully responsive for all devices",
+            "Mobile-Friendly and Intuitive User Experience and Seamless animations."
+        ],
+        "live": "https://eyun-fitness.web.app/",
+        "clientCode": "https://github.com/CodeWithShamim/independent-service-provider-Gym-webiste",
+        "serverCode": ""
+    }
+]
