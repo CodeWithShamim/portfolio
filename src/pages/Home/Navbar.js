@@ -19,13 +19,38 @@ const Navbar = () => {
           </h1>
         </div>
 
-        {/* --------------drawer--------- */}
-        <div className="flex lg:hidden">
-          <FaBars />
+        {/* --------------dropdown menu for mobile & tablet--------- */}
+        <div className="flex lg:hidden dropdown dropdown-end">
+          <label
+            tabIndex="0"
+            className="btn btn-ghost btn-circle bg-slate-700 p-3 rounded-full"
+          >
+            <FaBars />
+          </label>
+          <ul
+            tabIndex="0"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#contacts">Contact</a>
+            </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+          </ul>
         </div>
 
         {/* ------visible for large device------- */}
-        <div className="uppercase text-md font-bold tracking-widest hidden lg:flex gap-6">
+        <div className="uppercase text-teal-300 text-md font-bold tracking-widest hidden lg:flex gap-6">
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
             <a href="#about">About</a>
           </h1>
@@ -33,7 +58,7 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </h1>
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
-            <Link to="/">Skills</Link>
+            <a href="#skills">Skills</a>
           </h1>
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
             <a href="#contacts">Contact</a>
@@ -71,7 +96,7 @@ const Navbar = () => {
           {/* ---download resume--- */}
           <div className="py-4 md:py-10 text-base-100">
             <a
-              className="btn btn-outline font-bold text-secondary rounded-tl-full rounded-br-full"
+              className="btn btn-outline btn-info btn-sm md:btn-md animate-pulse hover:animate-none font-bold text-secondary rounded-tl-full rounded-br-full"
               href={Resume}
               download="Resume of shamim islam"
             >
