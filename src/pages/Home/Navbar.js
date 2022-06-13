@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ParticlesContainer from "./ParticlesContainer";
 import Typewriter from "typewriter-effect";
+import { FaBars } from "react-icons/fa";
 import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
 import logo from "../../images/logo.png";
 
@@ -18,6 +19,12 @@ const Navbar = () => {
           </h1>
         </div>
 
+        {/* --------------drawer--------- */}
+        <div className="flex lg:hidden">
+          <FaBars />
+        </div>
+
+        {/* ------visible for large device------- */}
         <div className="uppercase text-md font-bold tracking-widest hidden lg:flex gap-6">
           <h1 className="hover:text-pink-400 hover:scale-105 transition-all">
             <a href="#about">About</a>
