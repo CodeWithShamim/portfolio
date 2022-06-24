@@ -4,6 +4,7 @@ import Blogs from "../Blogs/Blogs";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Footer from "../Shared/Footer";
+import Maps from "./Maps";
 import MessangerChatBot from "./MessangerChatBot";
 import Navbar from "./Navbar";
 import ScrollButton from "./ScrollButton";
@@ -22,6 +23,7 @@ const Home = () => {
       <SocialIcon />
       <MessangerChatBot />
       <ScrollButton />
+      <Maps />
       <Footer />
     </div>
   );

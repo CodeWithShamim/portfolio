@@ -105,7 +105,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* ------------------particles----------------------- */}
       <ParticlesContainer></ParticlesContainer>
     </div>
