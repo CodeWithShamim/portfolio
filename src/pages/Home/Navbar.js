@@ -9,7 +9,20 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const buttonVariants = {
+    hidden: {
+      scale: 0,
+    },
     visible: {
+      rotate: 360,
+      scale: 1,
+      transition: {
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        delay: 1,
+      },
+    },
+    hover: {
       // x: [0, 20, -20, 25, -25, 0],
       transition: {
         type: "spring",
@@ -50,10 +63,11 @@ const Navbar = () => {
                 animate={{ y: 0, opacitiy: 1 }}
                 transition={{
                   type: "spring",
-                  stiffness: 100,
-                  duration: 1.5,
+                  stiffness: 50,
+                  duration: 2,
                   delay: 0.2,
                 }}
+                whileHover={{ rotate: 360 }}
                 src={logo}
                 alt="logo"
                 className="w-16 lg:w-20"
@@ -74,23 +88,48 @@ const Navbar = () => {
             tabIndex="0"
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <motion.li variants={buttonVariants} whileHover="visible">
+            <motion.li
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               <a href="#about">About</a>
             </motion.li>
 
-            <motion.li variants={buttonVariants} whileHover="visible">
+            <motion.li
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               <a href="#projects">Projects</a>
             </motion.li>
 
-            <motion.li variants={buttonVariants} whileHover="visible">
+            <motion.li
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               <a href="#skills">Skills</a>
             </motion.li>
 
-            <motion.li variants={buttonVariants} whileHover="visible">
+            <motion.li
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               <a href="#contacts">Contact</a>
             </motion.li>
 
-            <motion.li variants={buttonVariants} whileHover="visible">
+            <motion.li
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileHover="hover"
+            >
               <a href="#blogs">Blogs</a>
             </motion.li>
           </ul>
@@ -98,28 +137,53 @@ const Navbar = () => {
 
         {/* ------visible for large device------- */}
         <div className="uppercase text-teal-300 text-md font-bold tracking-widest hidden lg:flex gap-6">
-          <motion.h1 variants={buttonVariants} whileHover="visible">
+          <motion.h1
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             <a href="#about" className="py-4">
               About
             </a>
           </motion.h1>
 
-          <motion.h1 variants={buttonVariants} whileHover="visible">
+          <motion.h1
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             <a href="#projects" className="py-4">
               Projects
             </a>
           </motion.h1>
-          <motion.h1 variants={buttonVariants} whileHover="visible">
+          <motion.h1
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             <a href="#skills" className="py-4">
               Skills
             </a>
           </motion.h1>
-          <motion.h1 variants={buttonVariants} whileHover="visible">
+          <motion.h1
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             <a href="#contacts" className="py-4">
               Contact
             </a>
           </motion.h1>
-          <motion.h1 variants={buttonVariants} whileHover="visible">
+          <motion.h1
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+          >
             <a href="#blogs" className="py-4">
               Blogs
             </a>
@@ -157,20 +221,26 @@ const Navbar = () => {
           </p>
 
           {/* ---download resume--- */}
-          <div className="py-4 md:py-10 text-base-100">
-            <motion.a
-              whileHover={{
-                scale: 1.1,
-                textShadow: "0px 0px 8px rgb(255, 255, 255)",
-                boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-              }}
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              x: [0, -10, 10, 0],
+              textShadow: "0px 0px 8px rgb(255, 255, 255)",
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+            }}
+            className="p-5"
+          >
+            <a
               className="btn btn-outline rounded-full hover:bg-transparent hover:text-secondary btn-sm md:btn-md font-bold text-secondary"
               href={Resume}
               download="Resume of shamim islam"
             >
               Download Resume
-            </motion.a>
-          </div>
+            </a>
+          </motion.div>
         </div>
       </div>
       {/* ------------------particles----------------------- */}
