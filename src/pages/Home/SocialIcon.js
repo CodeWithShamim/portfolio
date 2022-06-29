@@ -20,7 +20,7 @@ const SocialIcon = () => {
         type: "spring",
         stiffness: 260,
         damping: 20,
-        delay: 1,
+        delay: 1.5,
       },
     },
   };

@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 300);
+    }, 2000);
   }, []);
   if (loading) {
     return <PreLoader loading={loading} />;

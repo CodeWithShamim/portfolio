@@ -19,7 +19,7 @@ const Navbar = () => {
         type: "spring",
         stiffness: 500,
         damping: 20,
-        delay: 0.8,
+        delay: 0.4,
       },
     },
     hover: {
@@ -45,7 +45,7 @@ const Navbar = () => {
       transition: {
         type: "spring",
         stiffness: 300,
-        delay: 0.2,
+        delay: 0.8,
         duration: 1.5,
       },
     },
