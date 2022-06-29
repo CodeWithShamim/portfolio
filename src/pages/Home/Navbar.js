@@ -17,9 +17,9 @@ const Navbar = () => {
       scale: 1,
       transition: {
         type: "spring",
-        stiffness: 260,
+        stiffness: 500,
         damping: 20,
-        delay: 1,
+        delay: 0.8,
       },
     },
     hover: {
@@ -33,7 +33,7 @@ const Navbar = () => {
     },
   };
 
-  const menuVariants = {
+  const titleVariants = {
     hidden: {
       opacitiy: 0,
       x: "-100vw",
@@ -44,7 +44,7 @@ const Navbar = () => {
       x: 0,
       transition: {
         type: "spring",
-        stiffness: 100,
+        stiffness: 300,
         delay: 0.2,
         duration: 1.5,
       },
@@ -195,7 +195,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center h-4/5">
         <div>
           <motion.h1
-            variants={menuVariants}
+            variants={titleVariants}
             initial="hidden"
             animate="visible"
             className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest"
