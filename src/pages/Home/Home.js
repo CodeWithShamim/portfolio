@@ -5,6 +5,7 @@ import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import Footer from "../Shared/Footer";
+import Testimonials from "../Testimonials/Testimonials";
 import Maps from "./Maps";
 import MessangerChatBot from "./MessangerChatBot";
 import Navbar from "./Navbar";
@@ -17,6 +18,7 @@ const Home = () => {
       <Navbar />
       <Projects />
       <Services />
+      <Testimonials />
       <About />
       <Blogs />
       <Contact />
