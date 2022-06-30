@@ -19,7 +19,7 @@ const Navbar = () => {
         type: "spring",
         stiffness: 500,
         damping: 20,
-        delay: 0.4,
+        delay: 0.8,
       },
     },
     hover: {
@@ -45,7 +45,7 @@ const Navbar = () => {
       transition: {
         type: "spring",
         stiffness: 300,
-        delay: 0.8,
+        delay: 0.2,
         duration: 1.5,
       },
     },
@@ -200,22 +200,18 @@ const Navbar = () => {
             animate="visible"
             className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest"
           >
-            I'm SHAMIM
+            SHAMIM ISLAM
           </motion.h1>
 
           {/* ---typewriter--- */}
-          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-teal-300 font-semibold">
+          <p className="text-sm md:text-lg lg:text-xl tracking-widest text-teal-300 font-bold">
             <Typewriter
               options={{
-                strings: [
-                  "WEB DEVELOPER",
-                  "MERN STACK DEVELOPER",
-                  "I LOVE CODE",
-                ],
+                strings: ["I am a Web Designer", "I am a Web Developer"],
                 autoStart: true,
                 loop: true,
-                delay: 50,
-                deleteSpeed: 5,
+                delay: 40,
+                deleteSpeed: 0.2,
               }}
             />
           </p>
