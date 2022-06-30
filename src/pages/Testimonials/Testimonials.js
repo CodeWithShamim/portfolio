@@ -16,7 +16,7 @@ const Testimonials = () => {
       name: "Jonh Smith",
       position: "Marketing Director",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium nemo perspiciatis ipsum ipsa reprehenderit.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
     },
     {
       _id: 2,
@@ -24,7 +24,7 @@ const Testimonials = () => {
       name: "Jonh Smith",
       position: "Marketing Director",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium nemo perspiciatis ipsum ipsa reprehenderit.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
     },
     {
       _id: 3,
@@ -32,7 +32,7 @@ const Testimonials = () => {
       name: "Jonh Smith",
       position: "Marketing Director",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium nemo perspiciatis ipsum ipsa reprehenderit.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
     },
     {
       _id: 4,
@@ -40,7 +40,7 @@ const Testimonials = () => {
       name: "Jonh Smith",
       position: "Marketing Director",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium nemo perspiciatis ipsum ipsa reprehenderit.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
     },
   ];
 
@@ -56,7 +56,18 @@ const Testimonials = () => {
         <Swiper
           spaceBetween={50}
           loop="true"
-          slidesPerView={3}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              width: 640,
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+              width: 768,
+              slidesPerView: 2,
+            },
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
