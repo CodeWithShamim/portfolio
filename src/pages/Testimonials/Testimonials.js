@@ -58,7 +58,7 @@ const Testimonials = () => {
           loop="true"
           slidesPerView={3}
           autoplay={{
-            delay: 1500,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -66,15 +66,13 @@ const Testimonials = () => {
           }}
           modules={[Autoplay, Pagination]}
         >
-          <SwiperSlide>
-            {testimonials?.map((testimonial) => (
-              <Testimonial
-                key={testimonial._id}
-                testimonial={testimonial}
-              ></Testimonial>
-            ))}
-          </SwiperSlide>
-          ...
+          {/* ----maping items---- */}
+          {testimonials?.map((testimonial) => (
+            <SwiperSlide key={testimonial._id}>
+              <Testimonial testimonial={testimonial}></Testimonial>
+            </SwiperSlide>
+          ))}
+          {/* -----end--------- */}
         </Swiper>
       </div>
     </div>
