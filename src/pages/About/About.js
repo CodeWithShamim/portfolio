@@ -4,7 +4,7 @@ import AboutDetails from "./AboutDetails";
 
 const About = () => {
   return (
-    <div className="bg-secondary flex flex-col md:flex-row items-center justify-center py-6">
+    <div className="bg-secondary flex flex-col md:flex-row items-center justify-center md:py-6">
       <div className="flex-1 flex justify-center">
         <img
           className="w-96 md:w-4/5 border-[12px] border-transparent bg-gradient-to-r from-accent via-primary to-purple-500 shadow-lg"

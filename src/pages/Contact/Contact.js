@@ -52,7 +52,7 @@ const Contact = () => {
           ></textarea>
 
           {/* ----send msg btn---- */}
-          <div className="btn btn-error btn-sm rounded-sm text-secondary font-bold w-full mx-auto flex items-center justify-center">
+          <div className="btn btn-accent rounded-none text-secondary font-bold w-2/4 md:w-2/5 lg:w-1/5 mx-auto flex items-center justify-center">
             <input
               className="pr-1 font-bold"
               type="submit"
