@@ -1,6 +1,5 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import bg from "../../images/contact-bg.png";
 
 const Contact = () => {
   return (
@@ -16,7 +15,7 @@ const Contact = () => {
       >
         <div className="flex-1">
           <h1 className="mb-6 text-2xl md:text-4xl">
-            <span className="text-pink-500">Contact</span> with me...
+            <span className="text-accent">Contact</span> with me...
           </h1>
           <input
             type="hidden"
@@ -61,11 +60,6 @@ const Contact = () => {
             />
             <FaArrowRight />
           </div>
-        </div>
-
-        {/* ---------------------------------*/}
-        <div className="flex-1 pl-10">
-          <img src={bg} alt="contact-bg" className="animate-pulse" />
         </div>
       </form>
     </div>

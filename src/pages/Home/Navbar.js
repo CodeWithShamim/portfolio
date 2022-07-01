@@ -198,7 +198,7 @@ const Navbar = () => {
             variants={titleVariants}
             initial="hidden"
             animate="visible"
-            className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-widest"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-widest"
           >
             SHAMIM ISLAM
           </motion.h1>
