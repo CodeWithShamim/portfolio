@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ParticlesContainer from "./ParticlesContainer";
+import ParticlesContainer from "../Shared/ParticlesContainer";
 import Typewriter from "typewriter-effect";
 import { FaBars } from "react-icons/fa";
 import Resume from "../../images/resume/Resume_Shamim_islam.pdf";

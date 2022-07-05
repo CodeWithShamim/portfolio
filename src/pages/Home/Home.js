@@ -5,12 +5,12 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
+import Maps from "../Shared/Maps";
+import MessangerChatBot from "../Shared/MessangerChatBot";
+import ScrollButton from "../Shared/ScrollButton";
+import SocialIcon from "../Shared/SocialIcon";
 import Testimonials from "../Testimonials/Testimonials";
-import Maps from "./Maps";
-import MessangerChatBot from "./MessangerChatBot";
 import Navbar from "./Navbar";
-import ScrollButton from "./ScrollButton";
-import SocialIcon from "./SocialIcon";
 
 const Home = () => {
   return (
