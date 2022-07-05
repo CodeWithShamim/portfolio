@@ -3,7 +3,7 @@ import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
 
 const AboutDetails = () => {
   return (
-    <div className="font-mono text-left text-primary px-6 my-6 md:mb-0 flex-1">
+    <div className="font-mono text-gray-300 text-left px-6 md:mb-0 flex-1">
       <h1 className="text-4xl font-semibold">
         I am <span className="text-accent">Shamim Islam</span>
       </h1>

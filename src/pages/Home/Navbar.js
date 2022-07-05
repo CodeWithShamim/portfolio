@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ParticlesContainer from "../Shared/ParticlesContainer";
 import Typewriter from "typewriter-effect";
@@ -7,6 +7,20 @@ import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  // handle navbar visibility
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 50) {
+      setVisible(true);
+    } else if (scrolled <= 50) {
+      setVisible(false);
+    }
+  };
+  window.addEventListener("scroll", toggleVisible);
+
+  // animation added
   const buttonVariants = {
     hidden: {
       scale: 0,
@@ -57,7 +71,13 @@ const Navbar = () => {
 
       {/* -------------navbar------------------- */}
       <div className="absolute left-0 right-0 top-0">
-        <nav className="w-full px-4 md:px-10 py-10 flex items-center justify-between">
+        <nav
+          className={
+            visible
+              ? "bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-3 flex items-center justify-between transition ease-in-out delay-75"
+              : "w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all"
+          }
+        >
           <div>
             <motion.h1
               className="text-2xl md:text-3xl lg:text-4xl text-accent"
