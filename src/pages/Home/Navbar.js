@@ -4,7 +4,6 @@ import ParticlesContainer from "./ParticlesContainer";
 import Typewriter from "typewriter-effect";
 import { FaBars } from "react-icons/fa";
 import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
-import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -44,7 +43,7 @@ const Navbar = () => {
       x: 0,
       transition: {
         type: "spring",
-        stiffness: 300,
+        stiffness: 100,
         delay: 0.2,
         duration: 1.5,
       },
@@ -56,24 +55,17 @@ const Navbar = () => {
       {/* -------------navbar------------------- */}
       <nav className="w-full px-4 md:px-10 py-10 flex items-center justify-between">
         <div>
-          <h1>
-            <Link to="/">
-              <motion.img
-                initial={{ opaticy: 0, y: "-100vh" }}
-                animate={{ y: 0, opacitiy: 1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 50,
-                  duration: 2,
-                  delay: 0.2,
-                }}
-                whileHover={{ rotate: 360 }}
-                src={logo}
-                alt="logo"
-                className="w-16 lg:w-20"
-              />
-            </Link>
-          </h1>
+          <motion.h1
+            className="text-4xl text-accent"
+            initial={{ opaticy: 0, x: "-100vw" }}
+            animate={{ x: 0, opacitiy: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+            }}
+          >
+            <Link to="/">{`</SI>`}</Link>
+          </motion.h1>
         </div>
 
         {/* --------------dropdown menu for mobile & tablet--------- */}
