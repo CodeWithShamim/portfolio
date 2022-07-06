@@ -5,7 +5,7 @@ const Testimonial = ({ testimonial }) => {
   const { img, name, position, comment } = testimonial;
   return (
     <div className="flex flex-col justify-center items-center">
-      <p className="flex items-center justify-center bg-[#b31cb3] rounded-br-3xl rounded-tl-3xl px-6 py-2 text-left text-slate-100 shadow-2xl shadow-slate-400">
+      <p className="flex items-center justify-center bg-[#b31cb3] hover:bg-accent rounded-br-3xl rounded-tl-3xl px-6 py-6 text-left text-slate-100">
         <span className="text-3xl md:text-4xl lg:text-5xl pr-6">
           <FaQuoteLeft />
         </span>

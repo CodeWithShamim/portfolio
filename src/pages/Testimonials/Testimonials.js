@@ -45,9 +45,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="px-4 md:px-10 py-16 bg-secondary text-primary">
+    <div className="px-4 md:px-10 py-16 bg-primary text-secondary">
       {/* ----heading---- */}
-      <h1 className="text-3xl font-semibold pb-3 mb-16 border-b border-accent uppercase">
+      <h1 className="text-2xl lg:text-3xl font-semibold pb-3 mb-16 border-b border-accent uppercase">
         Testimonials
       </h1>
 
@@ -65,7 +65,15 @@ const Testimonials = () => {
             // when window width is >= 768px
             768: {
               width: 768,
+              slidesPerView: 1,
+            },
+            920: {
+              width: 920,
               slidesPerView: 2,
+            },
+            1200: {
+              width: 1200,
+              slidesPerView: 3,
             },
           }}
           autoplay={{

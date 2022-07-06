@@ -4,7 +4,7 @@ import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
 const AboutDetails = () => {
   return (
     <div className="font-mono text-gray-300 text-left px-6 md:mb-0 flex-1">
-      <h1 className="text-4xl font-semibold">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold pt-6 md:pt-0">
         I am <span className="text-accent">Shamim Islam</span>
       </h1>
       <p className="py-6">
@@ -36,7 +36,7 @@ const AboutDetails = () => {
       <a
         href={Resume}
         download="Resume of shamim islam"
-        className="font-sans font-bold mt-6 btn btn-accent rounded-none text-secondary"
+        className="font-serif font-semibold md:font-bold my-6 btn btn-accent btn-sm md:btn-md rounded-none text-secondary"
       >
         Download Resume
       </a>

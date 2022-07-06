@@ -37,9 +37,9 @@ const Services = () => {
     },
   ];
   return (
-    <div className="px-4 md:px-10 py-16 bg-secondary text-primary">
+    <div className="px-4 md:px-10 py-16 bg-primary text-secondary">
       {/* ----heading---- */}
-      <h1 className="text-3xl font-semibold pb-3 mb-16 border-b border-accent uppercase">
+      <h1 className="text-2xl lg:text-3xl font-bold pb-3 mb-16 border-b border-accent uppercase">
         Services
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">

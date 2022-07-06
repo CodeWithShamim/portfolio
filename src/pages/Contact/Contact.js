@@ -1,5 +1,6 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import ContactForm from "./ContactForm";
+import { FaUser, FaMailBulk, FaLocationArrow, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,61 +8,75 @@ const Contact = () => {
       id="contacts"
       className="w-full mx-auto px-4 md:px-10 lg:mx-0 my-10 md:my-20"
     >
-      {/* ----contact form---- */}
-      <form
-        action="https://formsubmit.co/0bf67c005d234851024f28a0b87d9bbf"
-        method="POST"
-        className="flex flex-col md:flex-row items-center justify-center"
-      >
-        <div className="flex-1">
-          <h1 className="mb-6 text-2xl md:text-4xl">
-            <span className="text-accent">Contact</span> with me...
-          </h1>
-          <input
-            type="hidden"
-            name="_next"
-            value="https://codewithshamim.web.app"
-          ></input>
+      {/* -------heading--------- */}
+      <div className="pb-6">
+        <h1 className="text-2xl lg:text-3xl uppercase font-bold">Contact me</h1>
+        <p className="text-accent">________get in touch________</p>
+      </div>
 
-          <div>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              placeholder="Full Name"
-              className="w-1/2 outline-0 border border-gray-400 border-r-0 p-2 bg-slate-500 focus:placeholder-white rounded rounded-r-none rounded-b-none"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder="Email Address"
-              className="w-1/2 outline-0 border border-gray-400 p-2 bg-slate-500  focus:placeholder-white rounded rounded-l-none rounded-b-none"
-            />
-          </div>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="7"
-            required
-            placeholder="Your Message"
-            className="w-full outline-0 border border-gray-400 border-y-0 p-2 rounded-bl rounded-br bg-slate-500  focus:placeholder-white"
-          ></textarea>
+      {/* -----main content------- */}
+      <div className="flex flex-col lg:flex-row gap-5">
+        {/* ----contact form (left side)---- */}
+        <ContactForm />
 
-          {/* ----send msg btn---- */}
-          <div className="btn btn-accent rounded-none text-secondary font-bold w-2/4 md:w-2/5 lg:w-1/5 mx-auto flex items-center justify-center">
-            <input
-              className="pr-1 font-bold"
-              type="submit"
-              value="Send Message"
-            />
-            <FaArrowRight />
+        {/* --------(right side)------- */}
+        <div className="basis-2/4 items-center justify-center text-left">
+          <p>
+            I am a frontend web developer. I can provide clean code and pixel
+            perfect design. I also make website more & more interactive with web
+            animations.
+          </p>
+
+          {/* -----info----- */}
+          <div className="m-6">
+            {/* ---name--- */}
+            <div className="flex items-center justify-start gap-6 pb-4">
+              <p className="text-accent text-3xl">
+                <FaUser />
+              </p>
+              <div>
+                <h2 className="font-bold text-lg text-gray-300">Name</h2>
+                <p className="text-sm font-mono">Shamim Islam</p>
+              </div>
+            </div>
+
+            {/* ---address--- */}
+            <div className="flex items-center justify-start gap-6">
+              <p className="text-accent text-3xl">
+                <FaLocationArrow />
+              </p>
+              <div>
+                <h2 className="font-bold text-lg text-gray-300">Address</h2>
+                <p className="text-sm font-mono">
+                  Taragonj-5420, Rangpur, Bangladesh
+                </p>
+              </div>
+            </div>
+
+            {/* ---name--- */}
+            <div className="flex items-center justify-start gap-6 py-4">
+              <p className="text-accent text-3xl">
+                <FaMailBulk />
+              </p>
+              <div>
+                <h2 className="font-bold text-lg text-gray-300">Email</h2>
+                <p className="text-sm font-mono">shamimislamonline@gmail.com</p>
+              </div>
+            </div>
+
+            {/* ---Phone--- */}
+            <div className="flex items-center justify-start gap-6">
+              <p className="text-accent text-3xl">
+                <FaPhone />
+              </p>
+              <div>
+                <h2 className="font-bold text-lg text-gray-300">Phone</h2>
+                <p className="text-sm font-mono">01762812568</p>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

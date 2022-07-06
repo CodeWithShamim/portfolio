@@ -9,6 +9,7 @@ import Maps from "../Shared/Maps";
 import MessangerChatBot from "../Shared/MessangerChatBot";
 import ScrollButton from "../Shared/ScrollButton";
 import SocialIcon from "../Shared/SocialIcon";
+import Skills from "../Skills/Skills";
 import Testimonials from "../Testimonials/Testimonials";
 import Navbar from "./Navbar";
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Navbar />
       <About />
       <Projects />
+      <Skills />
       <Services />
       <Testimonials />
       <Blogs />

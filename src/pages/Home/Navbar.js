@@ -12,9 +12,9 @@ const Navbar = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 50) {
+    if (scrolled > 60) {
       setVisible(true);
-    } else if (scrolled <= 50) {
+    } else if (scrolled <= 60) {
       setVisible(false);
     }
   };
@@ -74,7 +74,7 @@ const Navbar = () => {
         <nav
           className={
             visible
-              ? "bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-3 flex items-center justify-between transition ease-in-out delay-75"
+              ? "bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-1 lg:py-3 flex items-center justify-between transition ease-in-out delay-75"
               : "w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all"
           }
         >
