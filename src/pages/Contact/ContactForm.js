@@ -3,13 +3,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <div className="basis-2/4">
+    <div className="basis-2/3">
       <form
         action="https://formsubmit.co/0bf67c005d234851024f28a0b87d9bbf"
         method="POST"
         className="flex flex-col md:flex-row items-center justify-center"
       >
-        <div className="flex-1">
+        <div className="flex-1 text-primary">
           <input
             type="hidden"
             name="_next"
@@ -45,14 +45,14 @@ const ContactForm = () => {
           ></textarea>
 
           {/* ----send msg btn---- */}
-          <div className="btn btn-accent rounded-none text-secondary font-bold w-2/4 md:w-2/5 mx-auto flex items-center justify-center">
+          <button className="btn btn-accent rounded-none text-secondary font-bold w-2/4 md:w-2/5 mx-auto flex items-center justify-center">
             <input
               className="pr-1 font-bold"
               type="submit"
               value="Send Message"
             />
             <FaArrowRight />
-          </div>
+          </button>
         </div>
       </form>
     </div>

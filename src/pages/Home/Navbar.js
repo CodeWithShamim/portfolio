@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ParticlesContainer from "../Shared/ParticlesContainer";
 import Typewriter from "typewriter-effect";
 import { FaBars } from "react-icons/fa";
-import Resume from "../../images/resume/Resume_Shamim_islam.pdf";
+import Resume from "../../images/resume/Resume_of_shamim_islam.pdf";
 import { motion } from "framer-motion";
 
 const Navbar = () => {

@@ -1,0 +1,61 @@
+/* --------radial progress style for skills----- */
+
+.radial-html {
+    --value: 90;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-css {
+    --value: 80;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-tailwindcss {
+    --value: 90;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-bootstrap {
+    --value: 90;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-js {
+    --value: 80;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-react {
+    --value: 90;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-next {
+    --value: 80;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-express {
+    --value: 75;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-node {
+    --value: 60;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-mongodb {
+    --value: 60;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}

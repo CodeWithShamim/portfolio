@@ -19,11 +19,14 @@ const Maps = () => {
         zoom={11}
         style={{ width: "100%", height: "200px" }}
         scrollWheelZoom={false}
+        attributionControl={false}
       >
         <TileLayer url="https://api.maptiler.com/maps/basic/256/{z}/{x}/{y}.png?key=yQEKVyHONQ2bLjl1dP0i" />
 
         <Marker position={center} icon={markerIcon}>
-          <Popup>Shamim islam</Popup>
+          <Popup>
+            Taragonj-5420, Rangpur, Bangladesh (shamimislamonline@gmail.com)
+          </Popup>
         </Marker>
       </MapContainer>
     </div>
