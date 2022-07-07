@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contacts"
-      className="w-full mx-auto px-4 md:px-10 lg:mx-0 my-10 md:my-20"
+      className="bg-primary w-full mx-auto px-4 md:px-10 lg:mx-0 py-10 md:py-20"
     >
       {/* -------heading--------- */}
       <div className="pb-6">

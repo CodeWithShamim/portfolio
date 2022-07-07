@@ -24,7 +24,7 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
   return (
     <div
-      className="bg-accent z-[999] rounded-full p-2 fixed right-7 bottom-24 animate-bounce"
+      className="bg-accent z-[999] rounded-full p-2 fixed right-9 bottom-24 animate-bounce"
       style={{ display: visible ? "inline" : "none" }}
       onClick={scrollToTop}
     >

@@ -16,9 +16,9 @@ const Maps = () => {
       <MapContainer
         className="bg-primary"
         center={center}
-        zoom={11}
+        zoom={9}
         style={{ width: "100%", height: "200px" }}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         attributionControl={false}
       >
         <TileLayer url="https://api.maptiler.com/maps/basic/256/{z}/{x}/{y}.png?key=yQEKVyHONQ2bLjl1dP0i" />

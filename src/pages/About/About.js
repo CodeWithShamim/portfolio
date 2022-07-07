@@ -4,7 +4,7 @@ import AboutDetails from "./AboutDetails";
 
 const About = () => {
   return (
-    <div className="bg-primary md:py-6">
+    <div id="about" className="bg-primary md:py-6">
       {/* ----------heading-------------- */}
       <div className="py-16">
         <h1 className="text-2xl lg:text-3xl uppercase font-bold">About me</h1>
