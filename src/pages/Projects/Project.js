@@ -1,10 +1,19 @@
 import React from "react";
 import { FaGithub, FaEye } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ProjectItem = ({ project }) => {
   const { name, img, live, clientCode, serverCode } = project;
   return (
-    <div className="shadow w-full bg-slate-600">
+    <motion.div
+      whileHover={{ opacity: 1, scale: 1.1, transition: { duration: 0.6 } }}
+      whileTap={{
+        opacity: 0,
+        scale: 0.8,
+        borderRadius: "100%",
+      }}
+      className="shadow w-full bg-slate-600"
+    >
       <div className="relative project-img-box">
         <img className="w-full rounded" src={img} alt={name} />
         <div className="item hidden gap-5 absolute top-1/2 right-1/4 bg-slate-500 px-6 py-3 rounded-full">
@@ -23,7 +32,7 @@ const ProjectItem = ({ project }) => {
       <button className="btn btn-xs btn-accent w-full rounded-none text-secondary font-bold">
         Details
       </button>
-    </div>
+    </motion.div>
   );
 };
 

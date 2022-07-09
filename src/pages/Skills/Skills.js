@@ -1,7 +1,11 @@
 import React from "react";
 import "./Skills.css";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const Skills = () => {
+  const { scrollYProgress } = useViewportScroll();
+  const scale = useTransform(scrollYProgress, [0, 1.2], [0.2, 1.5]);
+
   return (
     <div id="skills" className="px-4 md:px-10 py-16 bg-primary text-secondary">
       {/* ----heading---- */}
@@ -10,7 +14,10 @@ const Skills = () => {
       </h1>
 
       {/* --------------skills--------------- */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 items-center justify-center">
+      <motion.div
+        style={{ scale }}
+        className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 items-center justify-items-center"
+      >
         {/* --HTML-- */}
         <div className="radial-html radial-progress text-accent">
           90% <p className="font-bold text-secondary">HTML</p>
@@ -60,7 +67,7 @@ const Skills = () => {
         <div className="radial-mongodb radial-progress text-accent">
           60% <p className="font-bold text-secondary">MongoDB</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

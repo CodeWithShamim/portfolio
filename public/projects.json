@@ -41,7 +41,7 @@
         "serverCode": ""
     },
     {
-        "id": 1,
+        "id": 4,
         "name": "Ryan refrigerator instrument (MERN)",
         "img": "https://i.ibb.co/gTr0fPT/fdgdg.png",
         "technologies": ["React", "TailwindCSS", "Daisy UI", "Stripe", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
@@ -55,7 +55,7 @@
         "serverCode": "https://github.com/CodeWithShamim/manufacturer-website-server-side"
     },
     {
-        "id": 2,
+        "id": 5,
         "name": "Ryan books store (MERN)",
         "img": "https://i.ibb.co/BG9kK0t/dfsf.png",
         "technologies": ["React", "Bootstrap", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
@@ -69,49 +69,7 @@
         "serverCode": "https://github.com/CodeWithShamim/Ryan-books-store-server-side"
     },
     {
-        "id": 3,
-        "name": "Eyun fitness (Gym Website)",
-        "img": "https://i.ibb.co/4Fvp298/fdsf.png",
-        "technologies": ["React", "Bootstrap", "Firebase"],
-        "description": [
-            "Create a unique design and added an awesome gym service section.",
-            "Implement firebase authentication & authorization and fully responsive for all devices",
-            "Mobile-Friendly and Intuitive User Experience and Seamless animations."
-        ],
-        "live": "https://eyun-fitness.web.app/",
-        "clientCode": "https://github.com/CodeWithShamim/independent-service-provider-Gym-webiste",
-        "serverCode": ""
-    },
-    {
-        "id": 1,
-        "name": "Ryan refrigerator instrument (MERN)",
-        "img": "https://i.ibb.co/gTr0fPT/fdgdg.png",
-        "technologies": ["React", "TailwindCSS", "Daisy UI", "Stripe", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
-        "description": [
-            "Full-stack Single page application refrigerator tool buying website. Add JWT for Secure data.",
-            "Create a dashboard for User and Admin. Implement sign-in, and sign-out methods using Firebase.",
-            "Seamless animations and responsiveness for all devices and Payment system add using stripe."
-        ],
-        "live": "https://ryan-refrigerator-instrument.web.app/",
-        "clientCode": "https://github.com/CodeWithShamim/manufacturer-website-client-side",
-        "serverCode": "https://github.com/CodeWithShamim/manufacturer-website-server-side"
-    },
-    {
-        "id": 2,
-        "name": "Ryan books store (MERN)",
-        "img": "https://i.ibb.co/BG9kK0t/dfsf.png",
-        "technologies": ["React", "Bootstrap", "JWT", "Express.js", "Node.js", "MongoDB", "Firebase"],
-        "description": [
-            "It’s a SPA book-buying website. Users can order any book, update & manage all inventory.",
-            "Manage all orders and add any item or update. Implement firebase authentication & authorization.",
-            "Seamless animations and responsiveness for all devices."
-        ],
-        "live": "https://ryan-books-store.web.app/",
-        "clientCode": "https://github.com/CodeWithShamim/Ryan-books-store-client-side",
-        "serverCode": "https://github.com/CodeWithShamim/Ryan-books-store-server-side"
-    },
-    {
-        "id": 3,
+        "id": 6,
         "name": "Eyun fitness (Gym Website)",
         "img": "https://i.ibb.co/4Fvp298/fdsf.png",
         "technologies": ["React", "Bootstrap", "Firebase"],
@@ -124,4 +82,5 @@
         "clientCode": "https://github.com/CodeWithShamim/independent-service-provider-Gym-webiste",
         "serverCode": ""
     }
+
 ]

@@ -35,7 +35,7 @@ const SocialIcon = () => {
         href="https://www.linkedin.com/in/codewithshamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full"
+        className="bg-teal-500 p-2 rounded-full hover:scale-125 hover:text-accent"
       >
         <FaLinkedin className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>
