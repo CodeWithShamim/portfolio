@@ -32,7 +32,7 @@ const Navbar = () => {
         type: "spring",
         stiffness: 500,
         damping: 20,
-        delay: 0.8,
+        // delay: 0.8,
       },
     },
     hover: {
@@ -75,7 +75,7 @@ const Navbar = () => {
           className={
             visible
               ? "bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-1 lg:py-3 flex items-center justify-between transition ease-in-out delay-75"
-              : "w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all"
+              : "w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all delay-75"
           }
         >
           <div>
@@ -152,7 +152,7 @@ const Navbar = () => {
           </div>
 
           {/* ------visible for large device------- */}
-          <div className="uppercase text-teal-300 text-md font-bold tracking-widest hidden lg:flex gap-6">
+          <div className="uppercase text-teal-300 text-sm font-bold tracking-widest hidden lg:flex gap-6">
             <motion.h1
               variants={buttonVariants}
               initial="hidden"

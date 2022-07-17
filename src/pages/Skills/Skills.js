@@ -4,7 +4,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 const Skills = () => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1.2], [0.2, 1.5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <div id="skills" className="px-4 md:px-10 py-16 bg-primary text-secondary">

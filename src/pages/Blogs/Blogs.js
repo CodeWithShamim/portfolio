@@ -7,6 +7,7 @@ const Blogs = () => {
       {/* -----blog no.1----  */}
       <div>
         <p className="text-xl text-accent">Comming soon...</p>
+        
       </div>
     </div>
   );

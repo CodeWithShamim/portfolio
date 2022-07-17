@@ -1,13 +1,15 @@
 import React from "react";
-import logo from "../images/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="bg-slate-500 font-mono flex justify-around items-center py-2">
-      <p className="flex items-center">
-        <img className="w-10" src={logo} alt="logo" />
+      <div className="flex items-center">
+        <p className="text-accent text-2xl px-2">
+          <Link to="/">{`</SI>`}</Link>
+        </p>
         <span className="text-xs">SHAMIM ISLAM</span>
-      </p>
+      </div>
       <p className="text-xs">Copyright &copy; All Right Reserved </p>
     </div>
   );

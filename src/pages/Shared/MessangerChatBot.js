@@ -7,7 +7,7 @@ const MessangerChatBot = () => {
       <MessengerCustomerChat
         pageId="104414818972089"
         appId="2364713910333982"
-        themeColor="#F500F5"
+        themeColor="#F200F2"
       />
     </div>
   );
