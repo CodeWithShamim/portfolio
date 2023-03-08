@@ -16,21 +16,21 @@ const Services = () => {
     },
     {
       _id: 2,
-      name: "Web Design",
+      name: "Android & IOS",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, natus!",
       icon: <FaEye />,
     },
     {
       _id: 3,
-      name: "Responsive Design",
+      name: "React Native",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, natus!",
       icon: <FaLaptopHouse />,
     },
     {
       _id: 4,
-      name: "Photography",
+      name: "3D Animations",
       description:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, natus!",
       icon: <FaCamera />,

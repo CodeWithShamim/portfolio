@@ -29,7 +29,7 @@ const Home = () => {
       <SocialIcon />
       <MessangerChatBot />
       <ScrollButton />
-      <Maps />
+      {/* <Maps /> */}
       <Footer />
     </div>
   );

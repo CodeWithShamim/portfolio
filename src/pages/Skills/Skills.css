@@ -37,25 +37,53 @@
 }
 
 .radial-next {
-    --value: 80;
+    --value: 70;
     --size: 9rem;
     --thickness: 0.7rem;
 }
 
 .radial-express {
-    --value: 75;
+    --value: 85;
     --size: 9rem;
     --thickness: 0.7rem;
 }
 
 .radial-node {
-    --value: 60;
+    --value: 85;
     --size: 9rem;
     --thickness: 0.7rem;
 }
 
 .radial-mongodb {
-    --value: 60;
+    --value: 85;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-rn {
+    --value: 95;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-ts {
+    --value: 75;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+
+.radial-redux {
+    --value: 80;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+.radial-firebase {
+    --value: 50;
+    --size: 9rem;
+    --thickness: 0.7rem;
+}
+.radial-awsAmplify {
+    --value: 50;
     --size: 9rem;
     --thickness: 0.7rem;
 }

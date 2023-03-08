@@ -18,6 +18,31 @@ const Skills = () => {
         style={{ scale }}
         className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 items-center justify-items-center"
       >
+        {/* --React Native-- */}
+        <div className="radial-rn radial-progress text-accent">
+          95% <p className="font-bold text-secondary">React Native</p>
+        </div>
+
+        {/* --React-- */}
+        <div className="radial-react radial-progress text-accent">
+          90% <p className="font-bold text-secondary">ReactJS</p>
+        </div>
+
+        {/* --Redux toolkit-- */}
+        <div className="radial-redux radial-progress text-accent">
+          80% <p className="font-bold text-secondary">Redux toolkit</p>
+        </div>
+
+        {/* --TS-- */}
+        <div className="radial-ts radial-progress text-accent">
+          75% <p className="font-bold text-secondary">TypeScript</p>
+        </div>
+
+        {/* --TailwindCSS-- */}
+        <div className="radial-tailwindcss radial-progress text-accent">
+          90% <p className="font-bold text-secondary">TailwindCSS</p>
+        </div>
+
         {/* --HTML-- */}
         <div className="radial-html radial-progress text-accent">
           90% <p className="font-bold text-secondary">HTML</p>
@@ -26,11 +51,6 @@ const Skills = () => {
         {/* --CSS-- */}
         <div className="radial-css radial-progress text-accent">
           80% <p className="font-bold text-secondary">CSS</p>
-        </div>
-
-        {/* --TailwindCSS-- */}
-        <div className="radial-tailwindcss radial-progress text-accent">
-          90% <p className="font-bold text-secondary">TailwindCSS</p>
         </div>
 
         {/* -----------Bootstrap-------------- */}
@@ -43,29 +63,34 @@ const Skills = () => {
           80% <p className="font-bold text-secondary">JavaScript</p>
         </div>
 
-        {/* --React-- */}
-        <div className="radial-react radial-progress text-accent">
-          90% <p className="font-bold text-secondary">ReactJS</p>
-        </div>
-
-        {/* --Next-- */}
-        <div className="radial-next radial-progress text-accent">
-          80% <p className="font-bold text-secondary">NextJs</p>
-        </div>
-
         {/* --Express-- */}
         <div className="radial-express radial-progress text-accent">
-          75% <p className="font-bold text-secondary">ExpressJS</p>
+          80% <p className="font-bold text-secondary">ExpressJS</p>
         </div>
 
         {/* --Node-- */}
         <div className="radial-node radial-progress text-accent">
-          60% <p className="font-bold text-secondary">NodeJS</p>
+          80% <p className="font-bold text-secondary">NodeJS</p>
         </div>
 
         {/* --MongoDB-- */}
         <div className="radial-mongodb radial-progress text-accent">
-          60% <p className="font-bold text-secondary">MongoDB</p>
+          80% <p className="font-bold text-secondary">MongoDB</p>
+        </div>
+
+        {/* --Firebase-- */}
+        <div className="radial-firebase radial-progress text-accent">
+          50% <p className="font-bold text-secondary">Firebase</p>
+        </div>
+
+        {/* --AWS Amplify-- */}
+        <div className="radial-awsAmplify radial-progress text-accent">
+          50% <p className="font-bold text-secondary">AWS Amplify</p>
+        </div>
+
+        {/* --Next JS-- */}
+        <div className="radial-next radial-progress text-accent">
+          70% <p className="font-bold text-secondary">NextJs</p>
         </div>
       </motion.div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../images/my-pic.jpg";
+import img from "../../images/my-pic.png";
 import AboutDetails from "./AboutDetails";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
 
       {/* -----about content------ */}
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <div className="relative flex-1 flex justify-center">
+        <div className="relative flex-1 flex justify-center h-screen">
           <img
             className="w-96 md:w-4/5 border-[12px] border-transparent bg-gradient-to-r from-accent via-primary to-purple-500 shadow-lg"
             src={img}

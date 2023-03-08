@@ -209,6 +209,11 @@ const Navbar = () => {
 
         {/* ---------banner------- */}
         <div className="flex justify-center items-center pt-40">
+          <div className="mr-2">
+            <div className="h-3 w-3 rounded-full bg-accent" />
+            <div className="h-64 w-1 bg-gradient-to-b from-pink-500 to-violet-900 mx-auto" />
+          </div>
+          
           <div>
             <motion.h1
               variants={titleVariants}
@@ -220,10 +225,14 @@ const Navbar = () => {
             </motion.h1>
 
             {/* ---typewriter--- */}
-            <p className="text-sm md:text-lg lg:text-xl tracking-widest text-teal-300 font-bold">
+            <p className="text-xs w-52 md:w-full md:text-sm lg:text-lg tracking-widest text-teal-300 font-bold">
               <Typewriter
                 options={{
-                  strings: ["I am a Web Designer", "I am a Web Developer"],
+                  strings: [
+                    "I am a React Native Developer",
+                    "Building Seamless and Scalable Web & Mobile Applications",
+                    "I am a Full Stack Web Developer",
+                  ],
                   autoStart: true,
                   loop: true,
                   delay: 40,

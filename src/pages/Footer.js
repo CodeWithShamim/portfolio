@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-slate-500 font-mono flex justify-around items-center py-2">
+    <div className="bg-[#33babd] font-mono flex justify-around items-center py-2">
       <div className="flex items-center">
         <p className="text-accent text-2xl px-2">
           <Link to="/">{`</SI>`}</Link>
