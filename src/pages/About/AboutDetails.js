@@ -1,9 +1,14 @@
 import React from "react";
 import Resume from "../../images/resume/Resume_of_shamim_islam.pdf";
+import { motion } from "framer-motion";
+import { slideIn } from "../../utils/motion";
 
 const AboutDetails = () => {
   return (
-    <div className="font-mono text-gray-300 text-left px-6 md:mb-0 flex-1">
+    <motion.div
+      variants={slideIn("up", "spring", 0.8, 1)}
+      className="font-mono text-gray-300 text-left md:mb-0 flex-1"
+    >
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold pt-6 md:pt-0">
         I am <span className="text-accent">Shamim Islam</span>
       </h1>
@@ -40,7 +45,7 @@ const AboutDetails = () => {
       >
         Download Resume
       </a>
-    </div>
+    </motion.div>
   );
 };
 

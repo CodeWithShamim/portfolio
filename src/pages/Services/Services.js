@@ -9,6 +9,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import SectionWrapper from "../../hoc/SectionWrapper";
 
 const Services = () => {
   const services = [
@@ -102,7 +103,7 @@ const Services = () => {
           className="vertical-timeline-element--education"
           date="April 2013"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaCamera/>}
+          icon={<FaCamera />}
         >
           <h3 className="vertical-timeline-element-title">
             Content Marketing for Web, Mobile and Social Media
@@ -114,7 +115,7 @@ const Services = () => {
           className="vertical-timeline-element--education"
           date="November 2012"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaCamera/>}
+          icon={<FaCamera />}
         >
           <h3 className="vertical-timeline-element-title">
             Agile Development Scrum Master
@@ -126,7 +127,7 @@ const Services = () => {
           className="vertical-timeline-element--education"
           date="2002 - 2006"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaCamera/>}
+          icon={<FaCamera />}
         >
           <h3 className="vertical-timeline-element-title">
             Bachelor of Science in Interactive Digital Media Visual Imaging
@@ -154,4 +155,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default SectionWrapper(Services, "Services");

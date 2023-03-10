@@ -26,7 +26,7 @@ const SocialIcon = () => {
   };
 
   return (
-    <div className="fixed z-[99999] rounded-lg left-3 top-1/4 md:top-1/3 flex flex-col gap-3 text-sm md:text-lg lg:xl shadow-xl transition-all">
+    <div className="fixed z-[99999] rounded-lg left-1 top-1/4 md:top-1/3 flex flex-col gap-3 text-sm md:text-lg lg:xl shadow-xl transition-all">
       {/* ----linkedin---- */}
       <motion.a
         variants={containerVariants}

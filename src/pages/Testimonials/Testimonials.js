@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import Testimonial from "./Testimonial";
+import SectionWrapper from "../../hoc/SectionWrapper";
 
 const Testimonials = () => {
   const testimonials = [
@@ -45,7 +46,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="px-4 md:px-10 py-16 bg-primary text-secondary">
+    <div className="py-16 bg-primary text-secondary">
       {/* ----heading---- */}
       <h1 className="text-2xl lg:text-3xl font-semibold pb-3 mb-16 border-b border-accent uppercase">
         Testimonials
@@ -98,4 +99,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default SectionWrapper(Testimonials, "Testimonials");

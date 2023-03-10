@@ -140,14 +140,6 @@ const Navbar = () => {
                 <a href="#contacts">Contact</a>
               </motion.li>
 
-              <motion.li
-                variants={buttonVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover="hover"
-              >
-                <a href="#blogs">Blogs</a>
-              </motion.li>
             </ul>
           </div>
 
@@ -158,6 +150,7 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               whileHover="hover"
+              className="text-xs"
             >
               <a href="#about" className="py-4">
                 About
@@ -169,6 +162,7 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               whileHover="hover"
+              className="text-xs"
             >
               <a href="#projects" className="py-4">
                 Projects
@@ -179,6 +173,7 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               whileHover="hover"
+              className="text-xs"
             >
               <a href="#skills" className="py-4">
                 Skills
@@ -189,21 +184,13 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               whileHover="hover"
+              className="text-xs"
             >
               <a href="#contacts" className="py-4">
                 Contact
               </a>
             </motion.h1>
-            <motion.h1
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-            >
-              <a href="#blogs" className="py-4">
-                Blogs
-              </a>
-            </motion.h1>
+
           </div>
         </nav>
 
