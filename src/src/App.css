@@ -1,0 +1,28 @@
+.App {
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+#tsparticles {
+    height: 100vh;
+}
+
+.navbar-background-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ---project section--- */
+
+.project-img-box:hover img {
+    transition: 0.3s linear;
+    opacity: 0.3;
+}
+
+.project-img-box:hover .item {
+    transition: all;
+    display: flex;
+}
