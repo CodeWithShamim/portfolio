@@ -6,16 +6,16 @@ import { slideIn } from "../../utils/motion";
 const AboutDetails = () => {
   return (
     <motion.div
-      variants={slideIn("up", "spring", 0.8, 1)}
+      variants={slideIn("up", "spring", 0.5, 1)}
       className="font-mono text-gray-300 text-left md:mb-0 flex-1"
     >
       <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold pt-6 md:pt-0">
         I am <span className="text-accent">Shamim Islam</span>
       </h1>
       <p className="py-6">
-        I am a frontend web developer. I can provide clean code and pixel
-        perfect design. I also make website more & more interactive with web
-        animations.
+        I am a Full Stack moblie & web application developer. I can provide
+        clean code and pixel perfect design. I also make website & app more &
+        more interactive with animations.
       </p>
       {/* -----------info-------- */}
       <ul className="text-lg grid gap-2">
@@ -23,7 +23,7 @@ const AboutDetails = () => {
           <span className="font-semibold">Full Name</span> : Shamim Islam
         </li>
         <li className="border p-2">
-          <span className="font-semibold">Age</span> : 20 Years
+          <span className="font-semibold">Age</span> : 22 Years
         </li>
         <li className="border p-2">
           <span className="font-semibold">Nationality</span> : Bangladeshi

@@ -9,7 +9,7 @@ const Testimonial = ({ testimonial }) => {
 
   return (
     <motion.div
-      className="flex flex-col justify-center items-center"
+      className="flex flex-col justify-center items-center h-[300px]"
       style={{ scale }}
     >
       <motion.p

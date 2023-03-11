@@ -70,6 +70,7 @@ export const slideIn = (direction, type, delay, duration) => {
         delay: delay,
         duration: duration,
         ease: "easeOut",
+        
       },
     },
   };

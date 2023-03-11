@@ -14,34 +14,34 @@ const Testimonials = () => {
     {
       _id: 1,
       img: img1,
-      name: "Jonh Smith",
-      position: "Marketing Director",
+      name: "Chris Brown",
+      position: "CEO",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
+        "I thought it was impossible to make a website as beautiful as our product.",
     },
     {
       _id: 2,
       img: img2,
-      name: "Jonh Smith",
-      position: "Marketing Director",
+      name: "Lisa Wang",
+      position: "CTO",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
+        " I've never met a web developer who truly cares about their clients' success like Rick does.",
     },
     {
       _id: 3,
       img: img3,
       name: "Jonh Smith",
-      position: "Marketing Director",
+      position: "CFO",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
+        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     },
     {
       _id: 4,
       img: img4,
-      name: "Jonh Smith",
-      position: "Marketing Director",
+      name: "Sara Lee",
+      position: "COO",
       comment:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis quisquam ad perferendis non aliquam laudantium.",
+        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     },
   ];
 

@@ -35,7 +35,7 @@ const SocialIcon = () => {
         href="https://www.linkedin.com/in/codewithshamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full hover:scale-125 hover:text-accent"
+        className="bg-slate-700 p-2 rounded-full hover:scale-125 hover:text-accent"
       >
         <FaLinkedin className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>
@@ -48,7 +48,7 @@ const SocialIcon = () => {
         href="https://github.com/CodeWithShamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full"
+        className="bg-slate-700 p-2 rounded-full"
       >
         <FaGithub className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>
@@ -61,7 +61,7 @@ const SocialIcon = () => {
         href="https://www.facebook.com/codewithshamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full"
+        className="bg-slate-700 p-2 rounded-full"
       >
         <FaFacebook className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>
@@ -74,7 +74,7 @@ const SocialIcon = () => {
         href="https://www.instagram.com/codewithshamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full"
+        className="bg-slate-700 p-2 rounded-full"
       >
         <FaInstagram className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>
@@ -87,7 +87,7 @@ const SocialIcon = () => {
         href="https://twitter.com/CodeWithShamim"
         rel="noreferrer"
         target="_blank"
-        className="bg-teal-500 p-2 rounded-full"
+        className="bg-slate-700 p-2 rounded-full"
       >
         <FaTwitter className="text-secondary hover:scale-125 hover:text-accent" />
       </motion.a>

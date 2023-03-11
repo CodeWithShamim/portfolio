@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { FaBars } from "react-icons/fa";
 import Resume from "../../images/resume/Resume_of_shamim_islam.pdf";
 import { motion } from "framer-motion";
+import { styles } from "../../utils/styles";
 
 const Navbar = () => {
   // handle navbar visibility
@@ -102,7 +103,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="bg-gradient-to-b from-pink-500 to-violet-900 menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <motion.li
                 variants={buttonVariants}
@@ -139,12 +140,11 @@ const Navbar = () => {
               >
                 <a href="#contacts">Contact</a>
               </motion.li>
-
             </ul>
           </div>
 
           {/* ------visible for large device------- */}
-          <div className="uppercase text-teal-300 text-sm font-bold tracking-widest hidden lg:flex gap-6">
+          <div className="uppercase text-white text-sm font-bold tracking-widest hidden lg:flex gap-6">
             <motion.h1
               variants={buttonVariants}
               initial="hidden"
@@ -190,29 +190,28 @@ const Navbar = () => {
                 Contact
               </a>
             </motion.h1>
-
           </div>
         </nav>
 
         {/* ---------banner------- */}
         <div className="flex justify-center items-center pt-40">
-          <div className="mr-2">
+          {/* <div className="mr-2">
             <div className="h-3 w-3 rounded-full bg-accent" />
             <div className="h-64 w-1 bg-gradient-to-b from-pink-500 to-violet-900 mx-auto" />
-          </div>
-          
+          </div> */}
+
           <div>
             <motion.h1
               variants={titleVariants}
               initial="hidden"
               animate="visible"
-              className="text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-widest"
+              className={styles.heroHeadText}
             >
               SHAMIM ISLAM
             </motion.h1>
 
             {/* ---typewriter--- */}
-            <p className="text-xs w-52 md:w-full md:text-sm lg:text-lg tracking-widest text-teal-300 font-bold">
+            <p className={`${styles.heroSubText}`}>
               <Typewriter
                 options={{
                   strings: [

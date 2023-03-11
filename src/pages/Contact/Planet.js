@@ -6,7 +6,7 @@ import EarthCanvas from "../canvas/Earth";
 const Planet = () => {
   return (
     <motion.div
-      variants={slideIn("right", "tween", 0.2, 1)}
+      variants={slideIn("down", "tween", 0.2, 1)}
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
     >
       <EarthCanvas />

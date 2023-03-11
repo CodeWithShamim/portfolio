@@ -93,13 +93,12 @@ const ContactForm = () => {
           ></textarea>
 
           {/* ----send msg btn---- */}
-          <button className="btn bg-slate-500 hover:bg-slate-400 mt-6 rounded-lg text-secondary font-bold w-2/4 md:w-2/5 flex items-center justify-center">
+          <button className="btn border-0 bg-gradient-to-l from-pink-500 to-violet-800 hover:bg-slate-500 mt-6 rounded-lg text-secondary font-bold w-2/4 md:w-2/5 flex items-center justify-center">
             <input
               className="pr-1 font-bold"
               type="submit"
-              value={loading ? "Sending..." : "Send Message"}
+              value={loading ? "Sending..." : "Send"}
             />
-            <FaArrowRight />
           </button>
         </div>
       </form>

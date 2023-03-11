@@ -13,7 +13,9 @@ const Projects = () => {
 
   return (
     <div>
-      <h1 className={styles.sectionHeadText}>Projects</h1>
+      <h1 className={`${styles.sectionHeadText} border-b border-accent p-3`}>
+        Projects
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10">
         {projects?.map((project) => (
           <Project key={project.id} project={project}></Project>
