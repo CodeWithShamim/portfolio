@@ -24,15 +24,17 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center">
         <motion.div
           variants={slideIn("left", "spring", 0.3, 1)}
-          className="relative flex-1 flex justify-start h-[500px]"
-          >
+          className="relative flex-1 flex justify-start h-[500px]">
           {/* <Tilt> */}
-          <img
-            className="w-96 md:w-4/5 rounded-lg object-cover border-[12px] border-transparent bg-gradient-to-r from-accent via-primary to-purple-500 shadow-lg"
-            src={img}
-            alt="myPic"
-          />
-        {/* </Tilt> */}
+          <div className="w-96 md:w-4/5 rounded-xl bg-gradient-to-b 
+          from-pink-500 via-violet-500 to-accent shadow-lg">
+            <img
+              className="w-full h-full rounded-2xl object-cover p-1"
+              src={img}
+              alt="myPic"
+            />
+          </div>
+          {/* </Tilt> */}
         </motion.div>
 
         <AboutDetails />

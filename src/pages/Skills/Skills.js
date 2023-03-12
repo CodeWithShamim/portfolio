@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <motion.div
       id="skills"
-      variants={slideIn("up", "tween", 0.2, 1)}
+      variants={slideIn("up", "tween", 0.3, .7)}
       className="pt-16 bg-primary text-secondary"
     >
       {/* ----heading---- */}

@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <About />
       <Services />

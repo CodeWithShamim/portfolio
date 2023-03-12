@@ -11,7 +11,7 @@ const Service = ({ index, service }) => {
   return (
     <Tilt>
       <motion.div
-        variants={fadeIn("", "spring", index * 0.3, index * 1)}
+        variants={fadeIn("", "spring", index * 0.5, 0.7)}
         className="tilt-inner flex flex-col justify-center items-center gap-6 border-2 
         rounded-lg hover:bg-accent xs:w-[200px] w-full h-[300px]
         text-accent hover:text-secondary hover:border-none shadow-2xl shadow-slate-400"

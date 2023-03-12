@@ -89,7 +89,7 @@ const Navbar = () => {
                 stiffness: 50,
               }}
             >
-              <Link to="/">{`</SI>`}</Link>
+              <a href="#home">{`</SI>`}</a>
             </motion.h1>
           </div>
 

@@ -48,7 +48,7 @@ const Testimonials = () => {
   return (
     <div className="py-16 bg-primary text-secondary">
       {/* ----heading---- */}
-      <h1 className="text-2xl lg:text-3xl font-semibold pb-3 mb-16 border-b border-accent uppercase">
+      <h1 className="text-2xl lg:text-3xl font-semibold pb-3 border-b border-accent uppercase">
         Testimonials
       </h1>
 

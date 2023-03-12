@@ -7,15 +7,17 @@ const AboutDetails = () => {
   return (
     <motion.div
       variants={slideIn("up", "spring", 0.5, 1)}
-      className="font-mono text-gray-300 text-left md:mb-0 flex-1"
+      className="text-gray-300 text-left md:mb-0 flex-1 tracking-wider sm:text-[16px] text-14"
     >
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold pt-6 md:pt-0">
+      {/* <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold pt-6 md:pt-0">
         I am <span className="text-accent">Shamim Islam</span>
-      </h1>
+      </h1> */}
       <p className="py-6">
-        I am a Full Stack moblie & web application developer. I can provide
-        clean code and pixel perfect design. I also make website & app more &
-        more interactive with animations.
+        I'm a skilled developer with experience in TypeScript and JavaScript,
+        and expertise in frameworks like React, React Native, Node.js, and AWS
+        Amplify. I'm a quick learner and collaborate closely with clients to
+        create efficient, scalable, and user-friendly solutions that solve
+        real-world problems. Let's work together to bring your ideas to life
       </p>
       {/* -----------info-------- */}
       <ul className="text-lg grid gap-2">
