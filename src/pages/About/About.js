@@ -26,7 +26,7 @@ const About = () => {
           variants={slideIn("left", "spring", 0.3, 1)}
           className="relative flex-1 flex justify-start h-[500px]">
           {/* <Tilt> */}
-          <div className="w-96 md:w-4/5 rounded-xl bg-gradient-to-b 
+          <div className="w-[340px] md:w-4/5 rounded-xl bg-gradient-to-b 
           from-pink-500 via-violet-500 to-accent shadow-lg">
             <img
               className="w-full h-full rounded-2xl object-cover p-1"

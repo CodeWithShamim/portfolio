@@ -1,8 +1,8 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import { isBrowser, motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
-import { FaGithub, FaEye } from "react-icons/fa";
+import { FaGithub, FaEye, FaGooglePlay } from "react-icons/fa";
 
 const ProjectCard = ({
   index,
@@ -17,12 +17,16 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn(
-        "up",
-        "spring",
-        type === "app" ? index * 0.5 : index * 1.5,
-        0.75
-      )}
+      variants={
+        window.innerWidth > 500
+          ? fadeIn(
+              "down",
+              "spring",
+              type === "app" ? index * 0.5 : index * 1.5,
+              0.75
+            )
+          : null
+      }
     >
       <Tilt
         options={{
@@ -41,19 +45,25 @@ const ProjectCard = ({
             } w-full object-cover rounded-2xl`}
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover opacity-90">
-            <div
-              onClick={() => window.open(live_link, "_blank")}
-              className="bg-slate-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <FaEye className="w-1/2 h-1/2 object-contain" />
-            </div>
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            {type !== "app" && (
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className="bg-slate-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <FaEye className="w-1/2 h-1/2 object-contain" />
+              </div>
+            )}
 
             <div
               onClick={() => window.open(client_code_link, "_blank")}
               className="bg-slate-500 mx-2 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <FaGithub className="w-1/2 h-1/2 object-contain" />
+              {type === "app" ? (
+                <FaGooglePlay className="w-1/2 h-1/2 object-contain" />
+              ) : (
+                <FaGithub className="w-1/2 h-1/2 object-contain" />
+              )}
             </div>
 
             {server_code_link && (

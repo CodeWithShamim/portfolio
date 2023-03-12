@@ -1,5 +1,6 @@
-import app1 from "../images/3.png";
+import plsr from "../images/3.png";
 import weConnect from "../images/weConnect.png";
+import familyTree from "../images/familyTree.png";
 
 const webProjects = [
   {
@@ -114,7 +115,7 @@ const webProjects = [
 const appProjects = [
   {
     name: "WeConnect",
-    description: "Social Media app",
+    description: "WeConnect is a free social app. Users can connect each other. Share post upload their moment. They can also communicate with message, audio call, video call.",
     tags: [
       {
         name: "react native",
@@ -135,11 +136,11 @@ const appProjects = [
     ],
     image: weConnect,
     apk_link: "https://github.com/",
-    source_code_link: "https://github.com/",
+    client_code_link: "https://play.google.com/store/apps/details?id=com.weconnectsocial",
   },
   {
     name: "PLSR",
-    description: "Ecommerce app",
+    description: "PLSR is a Ecommerce app. Users can Buy Products. Share Product their moment. They can also communicate with message",
     tags: [
       {
         name: "react native",
@@ -162,13 +163,13 @@ const appProjects = [
         color: "green-text-gradient",
       },
     ],
-    image: app1,
+    image: plsr,
     apk_link: "https://github.com/",
-    source_code_link: "https://github.com/",
+    client_code_link: "",
   },
   {
     name: "FamilyTree",
-    description: "Entertainment app",
+    description: "FamilyTree is a Entertainment app. Users can Create Family Tree & add family members details. Share Tree in other platform. Get Reminder for birthday by push notifications.",
     tags: [
       {
         name: "react native",
@@ -191,9 +192,9 @@ const appProjects = [
         color: "green-text-gradient",
       },
     ],
-    image: weConnect,
+    image: familyTree,
     apk_link: "https://github.com/",
-    source_code_link: "https://github.com/",
+    client_code_link: "",
   },
 ];
 
