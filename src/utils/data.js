@@ -162,6 +162,10 @@ const appProjects = [
         name: "redux toolkit",
         color: "green-text-gradient",
       },
+      {
+        name: "socket.io",
+        color: "pink-text-gradient",
+      },
     ],
     image: plsr,
     apk_link: "https://github.com/",

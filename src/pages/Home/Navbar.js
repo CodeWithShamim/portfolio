@@ -211,7 +211,7 @@ const Navbar = () => {
             </motion.h1>
 
             {/* ---typewriter--- */}
-            <p className={`${styles.heroSubText}`}>
+            <p className={`${styles.heroSubText} md:w-96 sm:w-72 w-36 mx-auto h-[70px]`}>
               <Typewriter
                 options={{
                   strings: [
@@ -241,7 +241,7 @@ const Navbar = () => {
               className="p-5"
             >
               <a
-                className="btn btn-outline rounded-full hover:bg-transparent hover:text-secondary btn-sm md:btn-md font-bold text-secondary"
+                className="btn btn-outline rounded-full hover:bg-transparent hover:text-secondary btn-xs md:btn-md font-bold text-secondary"
                 href={Resume}
                 download="Resume of shamim islam"
               >

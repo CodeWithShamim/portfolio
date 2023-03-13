@@ -34,15 +34,15 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-slate-700 p-5 rounded-2xl sm:w-[360px] h-[520px] w-full"
+        className="bg-slate-700 p-5 rounded-2xl sm:w-[360px] h-full w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full md:h-[230px] sm:h-[220] xs:h-[210px]">
           <img
             src={image}
             alt="project_image"
             className={`${
-              type === "app" ? "h-48" : "h-full"
-            } w-full object-cover rounded-2xl`}
+              type === "app" ? "md:h-48 sm:h-40 xs:h-32 w-full " : "h-full w-full"
+            } object-cover rounded-2xl`}
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
