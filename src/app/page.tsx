@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "@/section/Home/Home";
+import Home from "@/section/Home";
 
 const page = () => {
   return (
-    <div>
+    <div className="App text-secondary font-serif">
       <Home />
     </div>
   );

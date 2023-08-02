@@ -2,8 +2,13 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
+import { ITestimonial } from "./Testimonials";
 
-const Testimonial = ({ testimonial }) => {
+interface IProps {
+  testimonial: ITestimonial;
+}
+
+const Testimonial: React.FC<IProps> = ({ testimonial }) => {
   const { img, name, position, comment } = testimonial;
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1.1], [0.2, 1.3]);

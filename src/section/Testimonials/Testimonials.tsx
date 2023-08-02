@@ -3,11 +3,19 @@ import img1 from "@/images/testimonials/1.jpg";
 import img2 from "@/images/testimonials/2.jpg";
 import img3 from "@/images/testimonials/3.jpg";
 import img4 from "@/images/testimonials/4.jpg";
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 // import { Autoplay, Pagination } from "swiper";
-// import "swiper/css";
+import "swiper/css";
 import Testimonial from "./Testimonial";
 import SectionWrapper from "@/hoc/SectionWrapper";
+
+export interface ITestimonial {
+  _id: number;
+  img: any;
+  name: string;
+  position: string;
+  comment: string;
+}
 
 const Testimonials = () => {
   const testimonials = [
@@ -87,13 +95,13 @@ const Testimonials = () => {
           modules={[Autoplay, Pagination]}
         > */}
         {/* ----maping items---- */}
-        {testimonials?.map((testimonial) => (
-          // <SwiperSlide key={testimonial._id}>
-          <Testimonial
-            key={testimonial._id}
-            testimonial={testimonial}
-          ></Testimonial>
-          // </SwiperSlide>
+        {testimonials?.map((testimonial: ITestimonial) => (
+          <SwiperSlide key={testimonial._id}>
+            <Testimonial
+              key={testimonial._id}
+              testimonial={testimonial}
+            ></Testimonial>
+          </SwiperSlide>
         ))}
         {/* -----end--------- */}
         {/* </Swiper> */}

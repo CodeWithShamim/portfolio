@@ -62,7 +62,20 @@ const experiences = [
   },
 ];
 
-const ExperienceCard = ({ experience }) => {
+type IExperience = {
+  title: string;
+  company_name: string;
+  icon: string;
+  iconBg: string;
+  date: string;
+  points: string[];
+};
+
+interface IProps {
+  experience: IExperience;
+}
+
+const ExperienceCard: React.FC<IProps> = ({ experience }) => {
   const { title, date, icon, iconBg, points } = experience;
 
   return (
@@ -104,7 +117,7 @@ const Experience = () => {
   return (
     <div>
       <VerticalTimeline>
-        {experiences.map((experience, index) => {
+        {experiences.map((experience: any, index) => {
           return <ExperienceCard key={index} experience={experience} />;
         })}
       </VerticalTimeline>

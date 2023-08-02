@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, FormEventHandler, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
@@ -12,12 +12,14 @@ const ContactForm = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -83,8 +85,8 @@ const ContactForm = () => {
           <textarea
             name="message"
             id="message"
-            cols="30"
-            rows="7"
+            cols={30}
+            rows={7}
             onChange={handleChange}
             required
             placeholder="Your Message"

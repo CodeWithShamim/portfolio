@@ -1,6 +1,6 @@
 import React from "react";
-import SectionWrapper from "../../hoc/SectionWrapper";
-import StarsCanvas from "../../components/canvas/Stars";
+import SectionWrapper from "@/hoc/SectionWrapper";
+import StarsCanvas from "@/components/canvas/Stars";
 import ContactForm from "./ContactForm";
 import Planet from "./Planet";
 

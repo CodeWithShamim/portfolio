@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import ParticlesContainer from "../../section/Shared/ParticlesContainer";
+import ParticlesContainer from "@/components/ParticlesContainer";
 import Typewriter from "typewriter-effect";
 import { FaBars } from "react-icons/fa";
 // import Resume from "@/images/resume/Resume_of_shamim_islam.pdf";
 import { motion } from "framer-motion";
 import { styles } from "@/utils/styles";
-import Link from "next/link";
 
 const Navbar = () => {
   // handle navbar visibility
@@ -82,8 +81,8 @@ const Navbar = () => {
           <div>
             <motion.h1
               className="text-2xl md:text-3xl lg:text-4xl text-accent"
-              initial={{ opaticy: 0, x: "-100vw" }}
-              animate={{ x: 0, opacitiy: 1 }}
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
               transition={{
                 type: "spring",
                 stiffness: 50,
@@ -96,13 +95,13 @@ const Navbar = () => {
           {/* --------------dropdown menu for mobile & tablet--------- */}
           <div className="flex lg:hidden dropdown dropdown-end">
             <label
-              tabIndex="0"
+              tabIndex={0}
               className="btn btn-ghost btn-circle bg-slate-700 p-3 rounded-full"
             >
               <FaBars />
             </label>
             <ul
-              tabIndex="0"
+              tabIndex={0}
               className="bg-gradient-to-b from-pink-500 to-violet-900 menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <motion.li
