@@ -18,6 +18,8 @@ export interface ITestimonial {
 }
 
 const Testimonials = () => {
+  if (typeof window === "undefined") return <span>Loading...</span>;
+
   const testimonials = [
     {
       _id: 1,

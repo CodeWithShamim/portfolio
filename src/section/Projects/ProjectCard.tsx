@@ -16,6 +16,8 @@ const ProjectCard: React.FC<any> = ({
   client_code_link,
   server_code_link,
 }) => {
+  if (typeof window === "undefined") return <span>Loading...</span>;
+
   return (
     <motion.div
       variants={

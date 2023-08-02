@@ -12,6 +12,8 @@ const Earth = () => {
 };
 
 const EarthCanvas = () => {
+  if (typeof window === "undefined") return <span>Loading...</span>;
+
   return (
     <Canvas
       shadows

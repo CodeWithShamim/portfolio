@@ -5,6 +5,8 @@ import { useState } from "react";
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
+  if (typeof window === "undefined") return <span>Loading...</span>;
+
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 300) {

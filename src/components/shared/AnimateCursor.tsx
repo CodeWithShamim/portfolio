@@ -4,6 +4,8 @@ import React from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 const AnimateCursor = () => {
+  if (typeof window === "undefined") return <span>Loading...</span>;
+
   return (
     <div>
       <AnimatedCursor
