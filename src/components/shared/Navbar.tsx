@@ -205,13 +205,14 @@ const Navbar = () => {
               }}
               className="p-5"
             >
-              <a
+              <Link
                 className="btn btn-outline rounded-full hover:bg-transparent hover:text-secondary btn-xs md:btn-md font-bold text-secondary"
-                // href={Resume}
+                href="https://drive.google.com/file/d/1OfQDRPlM564uKIMepX_5b5h3wg4beC2V/view?usp=sharing"
+                target="_blank"
                 download="Resume of shamim islam"
               >
                 Download Resume
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

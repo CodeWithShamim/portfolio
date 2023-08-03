@@ -3,6 +3,7 @@ import React from "react";
 // import Resume from "@/images/resume/Resume_of_shamim_islam.pdf";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
+import Link from "next/link";
 
 const AboutDetails = () => {
   return (
@@ -41,13 +42,14 @@ const AboutDetails = () => {
       </ul>
 
       {/* ----------resume download btn----------- */}
-      <a
-        // href={Resume}
+      <Link
+        href="https://drive.google.com/file/d/1OfQDRPlM564uKIMepX_5b5h3wg4beC2V/view?usp=sharing"
+        target="_blank"
         download="Resume of shamim islam"
         className="font-serif font-semibold md:font-bold my-6 btn btn-accent btn-xs md:btn-sm lg:btn-md rounded-none text-secondary"
       >
         Download Resume
-      </a>
+      </Link>
     </motion.div>
   );
 };

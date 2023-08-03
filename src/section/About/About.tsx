@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="lg:w-[90%] lg:p-4 mx-auto relative top-[-110px] bg-primary rounded-lg">
+    <div className="lg:w-[90%] lg:p-4 mx-auto relative top-[-110px] bg-gradient-to-tr from-slate-900 to-pink-700  rounded-lg">
       {/* ----------heading-------------- */}
       <div className="pb-16">
         <motion.h1
@@ -25,7 +25,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center">
         <motion.div
           variants={slideIn("left", "spring", 0.3, 1)}
-          className="relative flex-1 flex justify-start h-[500px]"
+          className="relative flex-1 flex justify-start h-full"
         >
           <Tilt>
             <div
@@ -41,7 +41,8 @@ const About = () => {
                   width={100}
                   objectFit="cover"
                   layout="responsive"
-                  priority
+                  loading="lazy"
+                  // blurDataURL=""
                 />
               </div>
             </div>
