@@ -19,11 +19,10 @@ code {
   height: 100vh;
 }
 
-.navbar-background-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.banner-gradient {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+
 }
 
 

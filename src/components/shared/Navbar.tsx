@@ -6,6 +6,8 @@ import { FaBars } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { styles } from "@/utils/styles";
 import Link from "next/link";
+import Image from "next/image";
+import bannerImage from "@/images/banner.jpg";
 
 const Navbar = () => {
   // handle navbar visibility
@@ -68,9 +70,23 @@ const Navbar = () => {
   const navbarItems = ["about", "projects", "skills", "contacts"];
 
   return (
-    <div className="navbar-background-img h-screen">
-      {/* ------------------particles----------------------- */}
-      <ParticlesContainer></ParticlesContainer>
+    <div className="h-screen relative ">
+      {/* bg image  */}
+      <div className="h-full w-full ">
+        <Image
+          src={bannerImage}
+          alt="banner image"
+          // height={100}
+          // width={100}
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
+      </div>
+
+      <div className="absolute top-0 left-0 right-0">
+        <ParticlesContainer></ParticlesContainer>
+      </div>
 
       {/* -------------navbar------------------- */}
       <div className="absolute left-0 right-0 top-0">
@@ -159,7 +175,7 @@ const Navbar = () => {
 
             {/* ---typewriter--- */}
             <p
-              className={`${styles.heroSubText} md:w-96 sm:w-72 w-36 mx-auto h-[70px]`}
+              className={`${styles.sectionSubText} md:w-96 sm:w-72 w-36 mx-auto h-[70px]`}
             >
               <Typewriter
                 options={{
@@ -193,7 +209,9 @@ const Navbar = () => {
                 className="btn btn-outline rounded-full hover:bg-transparent hover:text-secondary btn-xs md:btn-md font-bold text-secondary"
                 // href={Resume}
                 download="Resume of shamim islam"
-              ></a>
+              >
+                Download Resume
+              </a>
             </motion.div>
           </div>
         </div>
