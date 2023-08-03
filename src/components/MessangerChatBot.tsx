@@ -5,8 +5,8 @@ const MessangerChatBot = () => {
   return (
     <div className="bg-zinc-400">
       <MessengerCustomerChat
-        pageId="104414818972089"
-        appId="2364713910333982"
+        pageId={process.env.FB_PAGE_ID}
+        appId={process.env.FB_APP_ID}
         themeColor="#F200F2"
       />
     </div>

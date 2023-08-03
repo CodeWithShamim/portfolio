@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa";
 // import Resume from "@/images/resume/Resume_of_shamim_islam.pdf";
 import { motion } from "framer-motion";
 import { styles } from "@/utils/styles";
+import Link from "next/link";
 
 const Navbar = () => {
   // handle navbar visibility
@@ -64,6 +65,8 @@ const Navbar = () => {
     },
   };
 
+  const navbarItems = ["about", "projects", "skills", "contacts"];
+
   return (
     <div className="navbar-background-img h-screen">
       {/* ------------------particles----------------------- */}
@@ -104,91 +107,36 @@ const Navbar = () => {
               tabIndex={0}
               className="bg-gradient-to-b from-pink-500 to-violet-900 menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <motion.li
-                variants={buttonVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover="hover"
-              >
-                <a href="#about">About</a>
-              </motion.li>
-
-              <motion.li
-                variants={buttonVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover="hover"
-              >
-                <a href="#projects">Projects</a>
-              </motion.li>
-
-              <motion.li
-                variants={buttonVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover="hover"
-              >
-                <a href="#skills">Skills</a>
-              </motion.li>
-
-              <motion.li
-                variants={buttonVariants}
-                initial="hidden"
-                animate="visible"
-                whileHover="hover"
-              >
-                <a href="#contacts">Contact</a>
-              </motion.li>
+              {navbarItems.map((item, index) => (
+                <motion.li
+                  key={index}
+                  variants={buttonVariants}
+                  initial="hidden"
+                  animate="visible"
+                  whileHover="hover"
+                >
+                  <Link href={`#${item}`}>{item}</Link>
+                </motion.li>
+              ))}
             </ul>
           </div>
 
           {/* ------visible for large device------- */}
           <div className="uppercase text-white text-sm font-bold tracking-widest hidden lg:flex gap-6">
-            <motion.h1
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-              className="text-xs"
-            >
-              <a href="#about" className="py-4">
-                About
-              </a>
-            </motion.h1>
-
-            <motion.h1
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-              className="text-xs"
-            >
-              <a href="#projects" className="py-4">
-                Projects
-              </a>
-            </motion.h1>
-            <motion.h1
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-              className="text-xs"
-            >
-              <a href="#skills" className="py-4">
-                Skills
-              </a>
-            </motion.h1>
-            <motion.h1
-              variants={buttonVariants}
-              initial="hidden"
-              animate="visible"
-              whileHover="hover"
-              className="text-xs"
-            >
-              <a href="#contacts" className="py-4">
-                Contact
-              </a>
-            </motion.h1>
+            {navbarItems.map((item, index) => (
+              <motion.h1
+                key={index}
+                variants={buttonVariants}
+                initial="hidden"
+                animate="visible"
+                whileHover="hover"
+                className="text-xs"
+              >
+                <a href={`#${item}`} className="py-4">
+                  {item}
+                </a>
+              </motion.h1>
+            ))}
           </div>
         </nav>
 
