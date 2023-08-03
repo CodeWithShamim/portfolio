@@ -3,8 +3,8 @@ import img1 from "@/images/testimonials/1.jpg";
 import img2 from "@/images/testimonials/2.jpg";
 import img3 from "@/images/testimonials/3.jpg";
 import img4 from "@/images/testimonials/4.jpg";
-import { SwiperSlide } from "swiper/react";
-// import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import Testimonial from "./Testimonial";
 import SectionWrapper from "@/hoc/SectionWrapper";
@@ -18,8 +18,6 @@ export interface ITestimonial {
 }
 
 const Testimonials = () => {
-  if (typeof window === "undefined") return <span>Loading...</span>;
-
   const testimonials = [
     {
       _id: 1,
@@ -64,9 +62,9 @@ const Testimonials = () => {
 
       {/* -----------swiper items----------- */}
       <div>
-        {/* <Swiper
+        <Swiper
           spaceBetween={50}
-          loop="true"
+          loop={true}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -95,18 +93,18 @@ const Testimonials = () => {
             clickable: true,
           }}
           modules={[Autoplay, Pagination]}
-        > */}
-        {/* ----maping items---- */}
-        {testimonials?.map((testimonial: ITestimonial) => (
-          <SwiperSlide key={testimonial._id}>
-            <Testimonial
-              key={testimonial._id}
-              testimonial={testimonial}
-            ></Testimonial>
-          </SwiperSlide>
-        ))}
-        {/* -----end--------- */}
-        {/* </Swiper> */}
+        >
+          {/* ----maping items---- */}
+          {testimonials?.map((testimonial: ITestimonial) => (
+            <SwiperSlide key={testimonial._id}>
+              <Testimonial
+                key={testimonial._id}
+                testimonial={testimonial}
+              ></Testimonial>
+            </SwiperSlide>
+          ))}
+          {/* -----end--------- */}
+        </Swiper>
       </div>
     </div>
   );

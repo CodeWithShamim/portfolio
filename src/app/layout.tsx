@@ -1,4 +1,3 @@
-import AnimateCursor from "@/components/shared/AnimateCursor";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -14,7 +13,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <AnimateCursor />
       <body>{children}</body>
     </html>
   );

@@ -1,23 +1,21 @@
-"use client";
+// "use client";
 
-import React from "react";
-import AnimatedCursor from "react-animated-cursor";
+// import React from "react";
+// import AnimatedCursor from "react-animated-cursor";
 
-const AnimateCursor = () => {
-  if (typeof window === "undefined") return <span>Loading...</span>;
+// const AnimateCursor = () => {
+//   return (
+//     <div>
+//       <AnimatedCursor
+//         color="224, 71, 0"
+//         innerSize={10}
+//         outerSize={60}
+//         outerAlpha={0.3}
+//         innerScale={0.7}
+//         outerScale={1.8}
+//       />
+//     </div>
+//   );
+// };
 
-  return (
-    <div>
-      <AnimatedCursor
-        color="224, 71, 0"
-        innerSize={10}
-        outerSize={60}
-        outerAlpha={0.3}
-        innerScale={0.7}
-        outerScale={1.8}
-      />
-    </div>
-  );
-};
-
-export default AnimateCursor;
+// export default AnimateCursor;

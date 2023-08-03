@@ -15,14 +15,16 @@ const Service: React.FC<any> = ({ index, service }) => {
         rounded-lg hover:bg-accent xs:w-[200px] w-full h-[300px]
         text-accent hover:text-secondary hover:border-none shadow-2xl shadow-slate-400"
       >
-        <Image
-          src={icon}
-          alt="icon"
-          height={100}
-          width={100}
-          layout="responsive"
-          className="w-20 h-20"
-        />
+        <div className="h-20 w-20">
+          <Image
+            src={icon}
+            alt="icon"
+            height={20}
+            width={20}
+            layout="responsive"
+            className="w-20 h-20"
+          />
+        </div>
         <h2 className="text-white font-semibold sm:text-[18px] text-[14px] tracking-wider">
           {name}
         </h2>

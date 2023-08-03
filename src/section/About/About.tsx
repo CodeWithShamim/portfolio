@@ -29,18 +29,21 @@ const About = () => {
         >
           <Tilt>
             <div
-              className="w-full md:w-4/5 rounded-xl bg-gradient-to-b 
+              className="w-[280px] md:w-[300px] lg:w-[440px] rounded-xl bg-gradient-to-b 
           from-pink-500 via-violet-500 to-accent shadow-lg"
             >
-              <Image
-                className="w-full h-full rounded-2xl object-cover p-1"
-                src={img}
-                alt="myPic"
-                height={100}
-                width={100}
-                layout="responsive"
-                priority
-              />
+              <div className="w-[280px] md:w-[300px] lg:w-[440px] rounded-2xl">
+                <Image
+                  className="h-full rounded-2xl p-1"
+                  src={img}
+                  alt="myPic"
+                  height={100}
+                  width={100}
+                  objectFit="cover"
+                  layout="responsive"
+                  priority
+                />
+              </div>
             </div>
           </Tilt>
         </motion.div>
