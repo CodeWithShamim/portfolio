@@ -19,26 +19,33 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (typeof window !== "undefined") setIsLoading(false);
+    // if (typeof window !== "undefined") setIsLoading(false);
+    setIsLoading(false);
   }, []);
 
-  if (isLoading) return <PreLoader loading={isLoading} />;
+  // if (isLoading) return <PreLoader loading={isLoading} />;
 
   return (
     <div id="home">
-      <Navbar />
-      <About />
-      <Services />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Testimonials />
-      <Contact />
+      {!isLoading ? (
+        <>
+          <Navbar />
+          <About />
+          <Services />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Testimonials />
+          <Contact />
 
-      {/* ----------------- */}
-      <SocialIcon />
-      <MessangerChatBot />
-      <ScrollButton />
+          {/* ----------------- */}
+          <SocialIcon />
+          <MessangerChatBot />
+          <ScrollButton />
+        </>
+      ) : (
+        <PreLoader />
+      )}
     </div>
   );
 };
