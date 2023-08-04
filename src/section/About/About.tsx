@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="w-[100%] lg:w-[90%] lg:p-4 mx-auto relative top-[-110px] bg-gradient-to-tr from-slate-900 to-pink-700  rounded-lg">
+    <div>
       {/* ----------heading-------------- */}
       <div className="pb-16">
         <motion.h1

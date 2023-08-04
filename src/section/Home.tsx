@@ -13,39 +13,37 @@ import Contact from "./Contact/Contact";
 import SocialIcon from "@/components/SocialIcon";
 import MessangerChatBot from "@/components/MessangerChatBot";
 import ScrollButton from "@/components/ScrollButton";
-import PreLoader from "@/components/Loader";
+import dynamic from "next/dynamic";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // if (typeof window !== "undefined") setIsLoading(false);
-    setIsLoading(false);
+    if (typeof window !== "undefined") setIsLoading(false);
   }, []);
 
-  // if (isLoading) return <PreLoader loading={isLoading} />;
+  if (isLoading)
+    return (
+      <h1 className="flex h-screen justify-center items-center">
+        <span className="loading loading-bars loading-lg text-accent"></span>
+      </h1>
+    );
 
   return (
     <div id="home">
-      {!isLoading ? (
-        <>
-          <Navbar />
-          <About />
-          <Services />
-          <Projects />
-          <Skills />
-          <Experience />
-          <Testimonials />
-          <Contact />
+      <Navbar />
+      <About />
+      <Services />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Testimonials />
+      <Contact />
 
-          {/* ----------------- */}
-          <SocialIcon />
-          <MessangerChatBot />
-          <ScrollButton />
-        </>
-      ) : (
-        <PreLoader />
-      )}
+      {/* ----------------- */}
+      <SocialIcon />
+      <MessangerChatBot />
+      <ScrollButton />
     </div>
   );
 };

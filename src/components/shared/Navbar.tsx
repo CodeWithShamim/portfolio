@@ -73,6 +73,7 @@ const Navbar = () => {
     <div className="h-screen relative ">
       {/* bg image  */}
       <div className="h-full w-full ">
+        <div className="banner-gradient h-screen z-[-9]"></div>
         <Image
           src={bannerImage}
           alt="banner image"
@@ -81,6 +82,7 @@ const Navbar = () => {
           layout="fill"
           objectFit="cover"
           priority
+          className="z-[-10]"
         />
       </div>
 
@@ -175,7 +177,7 @@ const Navbar = () => {
 
             {/* ---typewriter--- */}
             <p
-              className={`${styles.sectionSubText} md:w-96 sm:w-72 w-36 mx-auto h-[70px]`}
+              className={`${styles.heroSubText} md:w-96 sm:w-72 w-36 mx-auto h-[70px]`}
             >
               <Typewriter
                 options={{
