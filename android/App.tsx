@@ -7,12 +7,18 @@ import {
   Text,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import WebView from 'react-native-webview';
+import SplashScreen from 'react-native-splash-screen';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const {width, height} = Dimensions.get('window');
+
+  useEffect(() => {
+    const hide = setTimeout(() => SplashScreen.hide(), 2000);
+    return () => clearInterval(hide);
+  }, []);
 
   return (
     <>
@@ -31,6 +37,10 @@ const App = () => {
         onLoadEnd={syntheticEvent => {
           const {nativeEvent} = syntheticEvent;
           setIsLoading(nativeEvent.loading);
+        }}
+        onLoadProgress={syntheticEvent => {
+          const {nativeEvent} = syntheticEvent;
+          console.log(nativeEvent.progress);
         }}
       />
     </>
