@@ -1,4 +1,4 @@
-package com.portfolio;
+package com.SI;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

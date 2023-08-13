@@ -16,7 +16,7 @@ const App = () => {
   const {width, height} = Dimensions.get('window');
 
   useEffect(() => {
-    const hide = setTimeout(() => SplashScreen.hide(), 2000);
+    const hide = setTimeout(() => SplashScreen.hide(), 1000);
     return () => clearInterval(hide);
   }, []);
 
