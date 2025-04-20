@@ -1,90 +1,93 @@
-import React from "react";
+import React from 'react'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import SectionWrapper from "@/hoc/SectionWrapper";
-import wd from "@/images/web.png";
-import rd from "@/images/backend.png";
-import rn from "@/images/mobile.png";
-import fs from "@/images/creator.png";
-import Image from "next/image";
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
+import SectionWrapper from '@/hoc/SectionWrapper'
+import wd from '@/images/web.png'
+import rd from '@/images/backend.png'
+import rn from '@/images/mobile.png'
+import fs from '@/images/creator.png'
+import Image from 'next/image'
 
 const experiences = [
   {
-    title: "Front End Developer",
-    company_name: "Starbucks",
+    title: 'Front End Developer',
+    company_name: 'Starbucks',
     icon: wd,
-    iconBg: "#383E56",
-    date: "September 2021 - April 2022",
+    iconBg: '#383E56',
+    date: 'September 2021 - April 2022',
     points: [
-      "Developing and maintaining web applications using HTML, CSS, JavaScript and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using HTML, CSS, JavaScript and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "React.js Developer",
-    company_name: "Tesla",
+    title: 'React.js Developer',
+    company_name: 'Tesla',
     icon: rd,
-    iconBg: "#e871e8",
-    date: "April 2022 - September 2022",
+    iconBg: '#FF8C00',
+    date: 'April 2022 - September 2022',
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Shopify",
+    title: 'React Native Developer',
+    company_name: 'Shopify',
     icon: rn,
-    iconBg: "#383E56",
-    date: "October 2022 - Present",
+    iconBg: '#383E56',
+    date: 'October 2022 - Present',
     points: [
-      "Developing and maintaining android & ios applications using React Native and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining android & ios applications using React Native and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: 'Full stack Developer',
+    company_name: 'Meta',
     icon: fs,
-    iconBg: "#e871e8",
-    date: "September 2022 - Present",
+    iconBg: '#FF8C00',
+    date: 'September 2022 - Present',
     points: [
-      "Developing and maintaining web and android, ios applications using React Native, React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Developing and maintaining web and android, ios applications using React Native, React.js and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
-];
+]
 
 type IExperience = {
-  title: string;
-  company_name: string;
-  icon: string;
-  iconBg: string;
-  date: string;
-  points: string[];
-};
-
-interface IProps {
-  experience: IExperience;
+  title: string
+  company_name: string
+  icon: string
+  iconBg: string
+  date: string
+  points: string[]
 }
 
+interface IProps {
+  experience: IExperience
+}
+
+const VTimeline = VerticalTimelineElement as unknown as React.FC<any>
+const VTimelineElement = VerticalTimelineElement as unknown as React.FC<any>
+
 const ExperienceCard: React.FC<IProps> = ({ experience }) => {
-  const { title, date, icon, iconBg, points } = experience;
+  const { title, date, icon, iconBg, points } = experience
 
   return (
-    <VerticalTimelineElement
+    <VTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "#334155", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+      contentStyle={{ background: '#334155', color: '#fff' }}
+      contentArrowStyle={{ borderRight: '7px solid  #fff' }}
       date={date}
-      iconStyle={{ background: iconBg, color: "#fff" }}
+      iconStyle={{ background: iconBg, color: '#fff' }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <Image
@@ -109,20 +112,20 @@ const ExperienceCard: React.FC<IProps> = ({ experience }) => {
           </li>
         ))}
       </ul>
-    </VerticalTimelineElement>
-  );
-};
+    </VTimelineElement>
+  )
+}
 
 const Experience = () => {
   return (
     <div>
-      <VerticalTimeline>
-        {experiences.map((experience: any, index) => {
-          return <ExperienceCard key={index} experience={experience} />;
+      <VTimeline>
+        {experiences?.map((experience: any, index) => {
+          return <ExperienceCard key={index} experience={experience} />
         })}
-      </VerticalTimeline>
+      </VTimeline>
     </div>
-  );
-};
+  )
+}
 
-export default SectionWrapper(Experience, "experience");
+export default SectionWrapper(Experience, 'experience')

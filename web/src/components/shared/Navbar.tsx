@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import ParticlesContainer from "@/components/ParticlesContainer";
-import Typewriter from "typewriter-effect";
-import { FaBars } from "react-icons/fa";
+import React, { useState } from 'react'
+import ParticlesContainer from '@/components/ParticlesContainer'
+import Typewriter from 'typewriter-effect'
+import { FaBars } from 'react-icons/fa'
 // import Resume from "@/images/resume/Resume_of_shamim_islam.pdf";
-import { motion } from "framer-motion";
-import { styles } from "@/utils/styles";
-import Link from "next/link";
-import Image from "next/image";
-import bannerImage from "@/images/banner.jpg";
+import { motion } from 'framer-motion'
+import { styles } from '@/utils/styles'
+import Link from 'next/link'
+import Image from 'next/image'
+import bannerImage from '@/images/banner.jpg'
 
 const Navbar = () => {
   // handle navbar visibility
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false)
 
   const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+    const scrolled = document.documentElement.scrollTop
     if (scrolled > 60) {
-      setVisible(true);
+      setVisible(true)
     } else if (scrolled <= 60) {
-      setVisible(false);
+      setVisible(false)
     }
-  };
-  window.addEventListener("scroll", toggleVisible);
+  }
+  window.addEventListener('scroll', toggleVisible)
 
   // animation added
   const buttonVariants = {
@@ -32,7 +32,7 @@ const Navbar = () => {
       rotate: 360,
       scale: 1,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 500,
         damping: 20,
         // delay: 0.8,
@@ -41,33 +41,33 @@ const Navbar = () => {
     hover: {
       // x: [0, 20, -20, 25, -25, 0],
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 400,
       },
       scale: 1.2,
-      color: "#FF33FF",
+      color: '#FF8C00',
     },
-  };
+  }
 
   const titleVariants = {
     hidden: {
       opacitiy: 0,
-      x: "-100vw",
+      x: '-100vw',
     },
     visible: {
       opacitiy: 1,
-      color: "#FF33FF",
+      color: '#FF8C00',
       x: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 100,
         delay: 0.2,
         duration: 1.5,
       },
     },
-  };
+  }
 
-  const navbarItems = ["about", "projects", "skills", "contacts"];
+  const navbarItems = ['about', 'projects', 'skills', 'contacts']
 
   return (
     <div className="h-screen relative ">
@@ -95,17 +95,17 @@ const Navbar = () => {
         <nav
           className={
             visible
-              ? "bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-1 lg:py-3 flex items-center justify-between transition ease-in-out delay-75"
-              : "w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all delay-75"
+              ? 'bg-primary shadow-2xl shadow-slate-400 fixed z-50 w-full px-4 md:px-10 py-1 lg:py-3 flex items-center justify-between transition ease-in-out delay-75'
+              : 'w-full px-4 md:px-10 py-10 flex items-center justify-between transition-all delay-75'
           }
         >
           <div>
             <motion.h1
               className="text-2xl md:text-3xl lg:text-4xl text-accent"
-              initial={{ x: "-100vw" }}
+              initial={{ x: '-100vw' }}
               animate={{ x: 0 }}
               transition={{
-                type: "spring",
+                type: 'spring',
                 stiffness: 50,
               }}
             >
@@ -182,9 +182,9 @@ const Navbar = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "I am a React Native Developer",
-                    "Building Seamless and Scalable Web & Mobile Applications",
-                    "I am a Full Stack Web Developer",
+                    'I am a React Native Developer',
+                    'Building Seamless and Scalable Web & Mobile Applications',
+                    'I am a Full Stack Web Developer',
                   ],
                   autoStart: true,
                   loop: true,
@@ -199,10 +199,10 @@ const Navbar = () => {
               whileHover={{
                 scale: 1.1,
                 x: [0, -10, 10, 0],
-                textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                textShadow: '0px 0px 8px rgb(255, 255, 255)',
               }}
               transition={{
-                type: "spring",
+                type: 'spring',
                 stiffness: 400,
               }}
               className="p-5"
@@ -220,7 +220,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

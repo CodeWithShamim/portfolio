@@ -1,12 +1,12 @@
-import React from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
+import React from 'react'
+import Particles from 'react-tsparticles'
+import { loadFull } from 'tsparticles'
+import { Engine } from 'tsparticles-engine'
 
 const ParticlesContainer = () => {
   const particlesInit = async (main: Engine) => {
-    await loadFull(main);
-  };
+    await loadFull(main)
+  }
 
   return (
     <Particles
@@ -19,11 +19,11 @@ const ParticlesContainer = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: 'push',
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: 'repulse',
             },
             resize: true,
           },
@@ -39,10 +39,10 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: "#60A5FA",
+            value: '#FF8C00',
           },
           links: {
-            color: "#ffffff",
+            color: '#ffffff',
             distance: 30,
             enable: true,
             opacity: 0.5,
@@ -52,10 +52,10 @@ const ParticlesContainer = () => {
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: 'none',
             enable: true,
             outModes: {
-              default: "bounce",
+              default: 'bounce',
             },
             random: false,
             speed: 1,
@@ -72,7 +72,7 @@ const ParticlesContainer = () => {
             value: 0.5,
           },
           shape: {
-            type: "polygon",
+            type: 'polygon',
           },
           size: {
             value: { min: 1, max: 2 },
@@ -81,7 +81,7 @@ const ParticlesContainer = () => {
         detectRetina: true,
       }}
     />
-  );
-};
+  )
+}
 
-export default ParticlesContainer;
+export default ParticlesContainer

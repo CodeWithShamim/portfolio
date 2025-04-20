@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@react-three/drei": "^9.80.1",
+    "@react-three/drei": "^9.80.0",
     "@react-three/fiber": "^8.13.6",
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
@@ -30,13 +30,17 @@
     "react-messenger-customer-chat": "^0.8.0",
     "react-tilt": "^1.0.2",
     "react-tsparticles": "^2.11.0",
-    "react-vertical-timeline-component": "^3.6.0",
+    "react-vertical-timeline-component": "^3.5.3",
     "swiper": "^8.2.6",
     "tailwindcss": "3.3.3",
     "three": "^0.155.0",
+    "three-mesh-bvh": "0.5.10",
     "tsparticles": "^2.11.1",
     "typescript": "5.1.6",
     "typewriter-effect": "^2.20.1"
+  },
+  "resolutions": {
+    "three-mesh-bvh": "0.5.10"
   },
   "devDependencies": {
     "@types/react-vertical-timeline-component": "^3.3.3",

@@ -1,12 +1,12 @@
-import React from "react";
-import SectionWrapper from "@/hoc/SectionWrapper";
-import img from "@/images/my-pic.png";
-import { styles } from "@/utils/styles";
-import AboutDetails from "./AboutDetails";
-import { motion } from "framer-motion";
-import { slideIn } from "@/utils/motion";
-import { Tilt } from "react-tilt";
-import Image from "next/image";
+import React from 'react'
+import SectionWrapper from '@/hoc/SectionWrapper'
+import img from '@/images/my-pic.jpg'
+import { styles } from '@/utils/styles'
+import AboutDetails from './AboutDetails'
+import { motion } from 'framer-motion'
+import { slideIn } from '@/utils/motion'
+import { Tilt } from 'react-tilt'
+import Image from 'next/image'
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
       {/* ----------heading-------------- */}
       <div className="pb-16">
         <motion.h1
-          variants={slideIn("left", "spring", 0.2, 1)}
+          variants={slideIn('left', 'spring', 0.2, 1)}
           className={`${styles.sectionHeadText} border-b border-accent pb-3`}
         >
           About me
@@ -24,7 +24,7 @@ const About = () => {
       {/* -----about content------ */}
       <div className="flex flex-col md:flex-row items-center justify-center">
         <motion.div
-          variants={slideIn("left", "spring", 0.3, 1)}
+          variants={slideIn('left', 'spring', 0.3, 1)}
           className="relative flex-1 flex justify-start h-full"
         >
           <Tilt>
@@ -52,7 +52,7 @@ const About = () => {
         <AboutDetails />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, 'about')
