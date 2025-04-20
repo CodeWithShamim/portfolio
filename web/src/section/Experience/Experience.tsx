@@ -75,7 +75,7 @@ interface IProps {
   experience: IExperience
 }
 
-const VTimeline = VerticalTimelineElement as unknown as React.FC<any>
+const VTimeline = VerticalTimeline as unknown as React.FC<any>
 const VTimelineElement = VerticalTimelineElement as unknown as React.FC<any>
 
 const ExperienceCard: React.FC<IProps> = ({ experience }) => {
@@ -84,7 +84,7 @@ const ExperienceCard: React.FC<IProps> = ({ experience }) => {
   return (
     <VTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: '#334155', color: '#fff' }}
+      contentStyle={{ background: '#FF7f00', color: '#fff' }}
       contentArrowStyle={{ borderRight: '7px solid  #fff' }}
       date={date}
       iconStyle={{ background: iconBg, color: '#fff' }}

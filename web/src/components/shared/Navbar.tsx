@@ -8,6 +8,7 @@ import { styles } from '@/utils/styles'
 import Link from 'next/link'
 import Image from 'next/image'
 import bannerImage from '@/images/banner.jpg'
+import StarsCanvas from '../canvas/Stars'
 
 const Navbar = () => {
   // handle navbar visibility
@@ -85,6 +86,8 @@ const Navbar = () => {
           className="z-[-10]"
         />
       </div>
+
+      <StarsCanvas />
 
       <div className="absolute top-0 left-0 right-0">
         <ParticlesContainer></ParticlesContainer>

@@ -1,8 +1,8 @@
-import React from "react";
-import SectionWrapper from "@/hoc/SectionWrapper";
-import StarsCanvas from "@/components/canvas/Stars";
-import ContactForm from "./ContactForm";
-import Planet from "./Planet";
+import React from 'react'
+import SectionWrapper from '@/hoc/SectionWrapper'
+import StarsCanvas from '@/components/canvas/Stars'
+import ContactForm from './ContactForm'
+import Planet from './Planet'
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
         <Planet />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SectionWrapper(Contact, "contacts");
+export default SectionWrapper(Contact, 'contacts')

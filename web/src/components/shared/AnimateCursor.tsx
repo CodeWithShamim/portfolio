@@ -1,7 +1,7 @@
-// "use client";
+// 'use client'
 
-// import React from "react";
-// import AnimatedCursor from "react-animated-cursor";
+// import React from 'react'
+// import AnimatedCursor from 'react-animated-cursor'
 
 // const AnimateCursor = () => {
 //   return (
@@ -15,7 +15,7 @@
 //         outerScale={1.8}
 //       />
 //     </div>
-//   );
-// };
+//   )
+// }
 
-// export default AnimateCursor;
+// export default AnimateCursor

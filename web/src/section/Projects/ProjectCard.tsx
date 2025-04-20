@@ -1,9 +1,9 @@
-import React from "react";
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/motion";
-import { FaGithub, FaEye, FaGooglePlay } from "react-icons/fa";
-import Image from "next/image";
+import React from 'react'
+import { Tilt } from 'react-tilt'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/utils/motion'
+import { FaGithub, FaEye, FaGooglePlay } from 'react-icons/fa'
+import Image from 'next/image'
 
 const ProjectCard: React.FC<any> = ({
   index,
@@ -21,9 +21,9 @@ const ProjectCard: React.FC<any> = ({
       variants={
         window.innerWidth > 500
           ? fadeIn(
-              "down",
-              "spring",
-              type === "app" ? index * 0.5 : index * 1.5,
+              'down',
+              'spring',
+              type === 'app' ? index * 0.5 : index * 1.5,
               0.75
             )
           : {}
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<any> = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-slate-700 p-5 rounded-2xl sm:w-[360px] h-full w-full"
+        className="bg-orange-800 p-5 rounded-2xl sm:w-[360px] h-full w-full"
       >
         <div className="relative w-full md:h-[230px] sm:h-[220] xs:h-[210px]">
           <Image
@@ -45,16 +45,16 @@ const ProjectCard: React.FC<any> = ({
             width={100}
             layout="responsive"
             className={`${
-              type === "app"
-                ? "md:h-48 sm:h-40 xs:h-32 w-full "
-                : "h-full w-full"
+              type === 'app'
+                ? 'md:h-48 sm:h-40 xs:h-32 w-full '
+                : 'h-full w-full'
             } object-cover rounded-2xl`}
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {type !== "app" && (
+            {type !== 'app' && (
               <div
-                onClick={() => window.open(live_link, "_blank")}
+                onClick={() => window.open(live_link, '_blank')}
                 className="bg-slate-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <FaEye className="w-1/2 h-1/2 object-contain" />
@@ -62,10 +62,10 @@ const ProjectCard: React.FC<any> = ({
             )}
 
             <div
-              onClick={() => window.open(client_code_link, "_blank")}
+              onClick={() => window.open(client_code_link, '_blank')}
               className="bg-slate-500 mx-2 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              {type === "app" ? (
+              {type === 'app' ? (
                 <FaGooglePlay className="w-1/2 h-1/2 object-contain" />
               ) : (
                 <FaGithub className="w-1/2 h-1/2 object-contain" />
@@ -74,7 +74,7 @@ const ProjectCard: React.FC<any> = ({
 
             {server_code_link && (
               <div
-                onClick={() => window.open(server_code_link, "_blank")}
+                onClick={() => window.open(server_code_link, '_blank')}
                 className="bg-slate-500 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <FaGithub className="w-1/2 h-1/2 object-contain" />
@@ -102,7 +102,7 @@ const ProjectCard: React.FC<any> = ({
         </div>
       </Tilt>
     </motion.div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

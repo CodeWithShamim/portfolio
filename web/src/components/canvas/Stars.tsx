@@ -21,10 +21,10 @@ const Stars = (props: any) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="#f272c8"
-          size={0.002}
+          color="#FF8C00"
+          size={0.005}
           sizeAttenuation={true}
-          depthWrite={false}
+          depthWrite={true}
         />
       </Points>
     </group>
